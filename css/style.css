@@ -106,6 +106,7 @@ header ol li a {
 
 .col:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 15px 15px 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
 }
 .food__name span {
     font-size: 18px;
@@ -117,10 +118,57 @@ header ol li a {
 
 .row {
     gap: 29px;
-    padding-top: 28px;
+    padding: 6px 27px 28px 10px;
 }
 
 .col {
-    max-width: 33.33%;
+    /* max-width: 33.33%; */
 }
 /* END FOOD */
+
+/* CONTACT */
+.contact {
+    padding: 80px 0 130px 0;
+    min-height: 100%;
+    background-image: url(./../img/banner2.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+}
+
+.contact .overplay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(7,10,12,.50);
+}
+
+.contact h1 {
+    font-weight: bold;
+}
+
+.contact .boxes button {
+    font-size: 15px;
+    padding: 12px 29px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.contact .boxes button:nth-child(1):hover {
+    color: orangered;
+}
+
+.contact .boxes button:nth-child(2) {
+    background-color: orangered;
+    border: 1px solid transparent;
+}
+
+.contact .boxes button:nth-child(2):hover {
+    opacity: 0.9;
+}
+
+
+/* END CONTACT */
