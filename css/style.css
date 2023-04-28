@@ -62,7 +62,7 @@ header ol li a {
 
 .offer .content .left h3 {
     font-family: 'Pacifico', cursive;
-    color: red;
+    color: #FF6600;
 }
 
 .offer .content .left h1 {
@@ -169,6 +169,53 @@ header ol li a {
 .contact .boxes button:nth-child(2):hover {
     opacity: 0.9;
 }
-
-
 /* END CONTACT */
+
+/* MENU */
+.menu {
+    padding: 85px 0;
+}
+
+.menu .title h3 {
+    font-family: 'Pacifico', cursive;
+    color: #FF6600;
+}
+
+.menu .title h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
+}
+
+.menu .dishes {
+    padding-top: 50px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.menu .dishes .left {
+    width: 50%;
+}
+
+.menu .dishes .left .item {
+    padding: "";
+}
+
+.menu .dishes .left .item .price {
+    border-bottom: 2px dotted black;
+}
+
+.menu .dishes .left .item .price h6:nth-child(2) {
+    color: #FF6600;
+}
+
+.menu .dishes .right {
+    width: 50%;
+}
+
+.menu .dishes .right .item .price {
+    border-bottom: 2px dotted black;
+}
+
+.menu .dishes .right .item .price h6:nth-child(2) {
+    color: #FF6600;
+}
+/* END MENU */
