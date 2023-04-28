@@ -121,9 +121,7 @@ header ol li a {
     padding: 6px 27px 28px 10px;
 }
 
-.col {
-    /* max-width: 33.33%; */
-}
+
 /* END FOOD */
 
 /* CONTACT */
@@ -219,3 +217,132 @@ header ol li a {
     color: #FF6600;
 }
 /* END MENU */
+
+/* FOOTER */
+footer {
+    background-color: black;
+    padding: 85px 0 0 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+footer .content {
+    padding: 0 0 85px 0;
+}
+
+footer .diner {
+    width: 30%;
+    padding: 0 35px 0 0;
+}
+
+footer .diner a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+    font-size: 30px;
+}
+
+footer .diner a:hover {
+    color: #FF6600;
+}
+
+footer .bg {
+    width: 36px;
+    height: 36px;
+    position: relative;
+    transition: all 0.5s;
+    background-color: white;
+}
+
+footer .bg i {
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    font-size: 17px;
+    color: #FF6600;
+}
+
+footer .bg:hover {
+    background-color: #FF6600;
+}
+
+footer .bg:hover i {
+    color: white;
+}
+
+footer .categories {
+    color: white;
+}
+
+footer .categories h1 {
+    font-size: 32px;
+}
+
+footer .categories p {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+footer .categories p:hover {
+    color: #FF6600;
+}
+
+footer .archive {
+    color: white;
+}
+
+footer .archive h1 {
+    font-size: 32px;
+}
+
+footer .archive p {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+footer .archive p:hover {
+    color: #FF6600;
+}
+
+footer .subcribe {
+    color: white;
+}
+
+footer .subcribe h1 {
+    font-size: 32px;
+}
+
+footer #Email {
+    padding: 10px 40px
+}
+
+footer .subcribe .button button {
+    background-color: orangered;
+    border: 1px solid transparent;
+    transition: all 0.5s;
+    padding: 10px 145px;
+}
+
+footer .subcribe .button:hover{
+    opacity: 0.9;
+}
+/* END FOOTER */
+
+/* COPYRIGHT */
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.103);
+    padding: 10px 0;
+}
+
+.copyright .text {
+    gap: 5px;
+}
+
+.copyright .text a {
+    color: #FF6600;
+    text-decoration: none;
+}
+
+.copyright .text a:hover {
+    color: white;
+}
+/* END COPYRIGHT */
