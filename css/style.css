@@ -116,7 +116,8 @@ header ol li a {
 }
 
 .row {
-    gap: 94px;
+    gap: 29px;
+    padding-top: 28px;
 }
 
 .col {
