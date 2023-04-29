@@ -31,11 +31,11 @@
 
 <body id="myBody">
   <!-- HEADER -->
-  <header>
+  <header id="myHeader">
     <div class="container">
       <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
-          <a href="#" class="fs-2 text-white" id="Home" >Diner</a>
+          <a href="https://wp.w3layouts.com/diner/" class="fs-2 text-white" id="Home" >Diner</a>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search here..." aria-label="Search">
             <i class="fa-solid fa-magnifying-glass fs-5"></i>
@@ -198,12 +198,16 @@
             the mouth.
           </h1>
           <div class="boxes d-flex justify-content-center mt-5">
-            <button type="button" class="btn btn-outline-light btn-lg me-4">
-              Read More <i class="fa-solid fa-chevron-right"></i>
-            </button>
-            <button type="button" class="btn btn-secondary btn-lg ">
-              Contact Us <i class="fa-solid fa-chevron-right"></i>
-            </button>
+            <a href="#url">
+              <button type="button" class="btn btn-outline-light btn-lg me-4">
+                Read More <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </a>
+            <a href="#url">
+              <button type="button" class="btn btn-secondary btn-lg ">
+                Contact Us <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </a>
           </div>
       </div>
     </div>
@@ -321,19 +325,27 @@
           <div class="icons d-flex">
             <!-- icon 1 -->
             <div class="bg  border-dark-subtle p-4 rounded-3 me-2">
-              <i class="fa-brands fa-facebook-f"></i>
+              <a href="https://www.facebook.com/w3layouts/">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
             </div>
             <!-- icon 2 -->
             <div class="bg border-dark-subtle p-4 rounded-3 me-2">
-              <i class="fa-brands fa-twitter"></i>
+              <a href="https://twitter.com/W3layouts">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
             </div>
             <!-- icon 3 -->
             <div class="bg border-dark-subtle p-4 rounded-3 me-2">
-              <i class="fa-brands fa-instagram"></i>
+              <a href="https://www.instagram.com/w3layouts_/">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
             </div>
             <!-- icon 4 -->
             <div class="bg border-dark-subtle p-4 rounded-3">
-              <i class="fa-brands fa-linkedin-in"></i>
+              <a href="https://www.linkedin.com/company/w3layouts/?originalSubdomain=in">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -371,7 +383,7 @@
   <!-- BACK TO TOP -->
   <div class="gohome d-flex justify-content-end">
     <div class="backtotop d-flex justify-content-center align-items-center rounded-5">
-      <a href="#Home">
+      <a href="#myHeader">
         <i class="fa-solid fa-angle-up"></i>
       </a>
     </div>
