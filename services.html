@@ -29,17 +29,20 @@
 
 </head>
 
-<body>
+<body id="myBody">
   <!-- HEADER -->
   <header>
     <div class="container">
       <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
-          <a href="#" class="fs-2 text-white" >Diner</a>
+          <a href="#" class="fs-2 text-white" id="Home" >Diner</a>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search here..." aria-label="Search">
             <i class="fa-solid fa-magnifying-glass fs-5"></i>
-            <i class="fa-regular fa-moon btn fs-4 me-2 text-white"></i>
+            <button class="btn" id="switchButton" title="Click to switch theme">
+              <i class="fa-regular fa-moon btn fs-4 me-2 text-white" id="moon"></i>
+              <i class="fa-regular fa-sun btn fs-4 me-2 " id="sun"></i>
+            </button>
             <i class="fa-solid fa-bars btn fs-4 text-white"></i>
           </form>
         </div>
@@ -317,19 +320,19 @@
           </p>
           <div class="icons d-flex">
             <!-- icon 1 -->
-            <div class="bg border border-dark-subtle p-4 rounded-3 me-2">
+            <div class="bg  border-dark-subtle p-4 rounded-3 me-2">
               <i class="fa-brands fa-facebook-f"></i>
             </div>
             <!-- icon 2 -->
-            <div class="bg border border-dark-subtle p-4 rounded-3 me-2">
+            <div class="bg border-dark-subtle p-4 rounded-3 me-2">
               <i class="fa-brands fa-twitter"></i>
             </div>
             <!-- icon 3 -->
-            <div class="bg border border-dark-subtle p-4 rounded-3 me-2">
+            <div class="bg border-dark-subtle p-4 rounded-3 me-2">
               <i class="fa-brands fa-instagram"></i>
             </div>
             <!-- icon 4 -->
-            <div class="bg border border-dark-subtle p-4 rounded-3">
+            <div class="bg border-dark-subtle p-4 rounded-3">
               <i class="fa-brands fa-linkedin-in"></i>
             </div>
           </div>
@@ -365,6 +368,16 @@
     </div>
   <!-- END FOOTER -->
 
+  <!-- BACK TO TOP -->
+  <div class="gohome d-flex justify-content-end">
+    <div class="backtotop d-flex justify-content-center align-items-center rounded-5">
+      <a href="#Home">
+        <i class="fa-solid fa-angle-up"></i>
+      </a>
+    </div>
+  </div>
+  <!-- END BACK TO TOP -->
+
   <!-- COPYRIGHT -->
     <div class="copyright">
       <div class="container">
@@ -386,7 +399,10 @@
   </script>
 
   <!-- File JS -->
-  <link rel="stylesheet" href="./js/script.js">
+  <script src="./js/script.js"></script>
+
+  <!-- Back to top animation -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 
 </html>
