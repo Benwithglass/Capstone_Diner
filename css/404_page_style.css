@@ -1,0 +1,332 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+    background-image:linear-gradient(to right, rgb(236 98 6 / 98%), rgb(5 3 0 / 83%)), url(./../img/banner2.jpg);
+    min-height: 350px;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 40px 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header form .form-control{
+    position: relative;
+    padding: 5px 50px 5px 20px;
+}
+
+/* thay doi vi tri kinh lup */
+header form i:nth-child(2) {
+    position: absolute;
+    right: 113px;
+    top: 25px;
+}
+
+header form i:last-child {
+    position: absolute;
+    top: 14px;
+    right: -17px;
+}
+
+/* Tương lai tươi sáng */
+#myBody {
+    background-color: white;
+}
+
+#switchButton #sun {
+    display: none;
+}
+#switchButton #moon {
+    display: block;
+}
+
+/* Tương lai u tối */
+.dark#myBody {
+    background-color: #404040;
+}
+
+.dark #switchButton #sun {
+    display: block;
+    color: white;
+    position: static;
+}
+  
+.dark #switchButton #moon {
+    display: none;
+}
+
+.dark .navbar input {
+    border: 1px solid white;
+}
+
+.dark .navbar input:focus {
+    border: 1px solid #FF6600;
+    background-color: #404040;
+}
+
+.dark input {
+    background-color: #404040;
+}
+
+.dark input:focus {
+    border: 1px solid #FF6600;
+    background-color: #404040;
+}
+
+.dark #backtohome {
+    color: white;
+}
+
+.dark .icons .bg{
+    background-color: #404040;
+}
+
+.dark .subcribe input {
+    border: 1px solid white;
+}
+
+.dark .subcribe #Email:focus {
+    border: 1px solid #FF6600;
+    background-color: #404040;
+}
+
+.dark main {
+    background-color: #404040;
+    color: white !important;
+}
+
+header nav a {
+    text-decoration: none;
+    /* color: black; */
+    font-weight: 700 !important;
+}
+
+header .direction {
+    padding: 80px 0 0 0;
+    position: relative;
+    width: 100%;
+}
+
+header ol li a {
+    color: orange;
+}
+/* END HEADER */
+
+/* CONTENT */
+.content {
+    padding: 85px 0;
+    font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.content h1 {
+    font-size: 130px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.content h3 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.content form .me-4{
+    height: 50px;
+    width: 280px;
+}
+
+.content form button {
+    height: 50px;
+    width: 120px;
+    font-weight: 700;
+    background-color: #FF6600;
+    color: white;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.content form .btn:hover{
+    background-color: #FF6600;
+    opacity: 0.8;
+    color: white;
+}
+
+.content a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+.content a i {
+    font-weight: 700;
+    position: absolute;
+    top: 7px;
+    left: 468px;
+}
+
+.content a p {
+    font-weight: 900;
+    transition: all 0.5s;
+}
+
+.content a p:hover {
+    color: #FF6600;
+}
+/* END CONTENT */
+
+/* FOOTER */
+footer {
+    background-color: black;
+    padding: 0 0 0 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* DINER */
+footer .diner .text a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+    font-size: 20px;
+}
+
+footer .diner .text a:hover {
+    color: #FF6600;
+}
+
+footer .icons .bg {
+    width: 36px;
+    height: 36px;
+    position: relative;
+    transition: all 0.5s;
+    background-color: white;
+}
+
+footer .icons .bg i {
+    position: absolute;
+    top: -6px;
+    left: -7px;
+    font-size: 17px;
+    color: #FF6600;
+}
+
+footer .icons .bg:hover {
+    background-color: #FF6600;
+}
+
+footer .icons .bg:hover i {
+    color: white;
+}
+/* END DINER */
+
+/* CATEGORIES */
+footer .categories {
+    color: white;
+}
+
+footer .categories p {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+footer .categories p:hover {
+    color: #FF6600;
+}
+/* END CATEGORIES */
+
+/* ARCHIVES */
+footer .archive {
+    color: white;
+}
+
+footer .archive p {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+footer .archive p:hover {
+    color: #FF6600;
+}
+/* END ARCHIVES */
+
+/* SUBCRIBE */
+footer .subcribe {
+    color: white;
+}
+
+Footer .subcribe .mb-3 input {
+    height: 50px;
+    width: 100%;
+}
+
+footer .subcribe .button button {
+    height: 50px;
+    width: 100%;
+    background-color: #FF6600;
+    border: 1px solid transparent;
+    opacity: 1;
+    transition: all 0.5s;
+    /* padding: 10px 133px; */
+}
+
+footer .subcribe .btn:hover{
+    background-color: #FF6600;
+    opacity: 0.8;
+    color: white;
+}
+/* END SUBCRIBE */
+
+/* BACK TO TOP */
+.backtotop {
+    width: 50px;
+    height: 50px;
+    background-color: #FF6600;
+    position: sticky;
+    right: 23px;
+    bottom: 50px;
+    transition: all 0.5s;
+    /* opacity: 1; */
+    /* pointer-events: none; */
+}
+
+/* .backtotop.active {
+    bottom: 32px;
+    opacity: 1;
+    pointer-events: auto;
+} */
+
+.backtotop a {
+    color: white;
+}
+/* END BACK TO TOP */
+
+/* COPYRIGHT */
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.103);
+    padding: 10px 0;
+}
+
+.copyright .text {
+    gap: 5px;
+}
+
+.copyright .text a {
+    color: #FF6600;
+    text-decoration: none;
+}
+
+.copyright .text a:hover {
+    color: white;
+}
+/* END COPYRIGHT */
+
+/* END FOOTER */
