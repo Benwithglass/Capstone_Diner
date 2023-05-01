@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+    background-image:linear-gradient(to right, rgb(236 98 6 / 98%), rgb(5 3 0 / 83%)), url(./../img/banner2.jpg);
+    min-height: 350px;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 40px 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header form .form-control{
+    position: relative;
+    padding: 5px 50px 5px 20px;
+}
+
+/* thay doi vi tri kinh lup */
+header form i:nth-child(2) {
+    position: absolute;
+    right: 113px;
+    top: 25px;
+}
+
+header form i:last-child {
+    position: absolute;
+    top: 14px;
+    right: -17px;
+}
+
+/* Tương lai tươi sáng */
+#myBody {
+    background-color: white;
+}
+
+#switchButton #sun {
+    display: none;
+}
+#switchButton #moon {
+    display: block;
+}
+
+/* Tương lai u tối */
+.dark#myBody {
+    background-color: #404040;
+}
+
+.dark #switchButton #sun {
+    display: block;
+    color: white;
+    position: static;
+}
+  
+.dark #switchButton #moon {
+    display: none;
+}
+
+.dark .navbar input {
+    border: 1px solid white;
+}
+
+.dark .navbar input:focus {
+    border: 1px solid #FF6600;
+    background-color: #404040;
+}
+
+.dark input {
+    background-color: #404040;
+}
+
+.dark input:focus {
+    border: 1px solid #FF6600;
+    background-color: #404040;
+}
+
+.dark #backtohome {
+    color: white;
+}
+
+.dark .icons .bg{
+    background-color: #404040;
+}
+
+.dark .subcribe input {
+    border: 1px solid white;
+}
+
+.dark .subcribe #Email:focus {
+    border: 1px solid #FF6600;
+    background-color: #404040;
+}
+
+.dark main {
+    background-color: #404040;
+    color: white !important;
+}
+
+header nav a {
+    text-decoration: none;
+    /* color: black; */
+    font-weight: 700 !important;
+}
+
+header .direction {
+    padding: 80px 0 0 0;
+    position: relative;
+    width: 100%;
+}
+
+header ol li a {
+    color: orange;
+}
+/* END HEADER */
+
+/* OVERVIEW */
+main {
+    padding: 85px 0;
+    font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
+}
+
+main h3 {
+    font-weight: 900;
+    font-size: 25px;
+}
+
+main h4 {
+    font-weight: 900;
+    font-size: 22px;
+    color: #FF6600;
+}
+
+main span {
+    font-size: 18px;
+}
+
+main .bg {
+    width: 100%;
+    height: "";
+    padding: 40px 0;
+    /* border: 1px solid gray; */
+}
+
+main .bg .left {
+    height: 150px;
+    width: 380px;
+    background-color: #F9F8FF;
+}
+
+main .bg .right {
+    height: 150px;
+    width: 80px;
+    background-color: #5F5A5A;
+}
+
+main .code {
+    padding: 25px 25px 45px 25px;
+    margin-top: 20px;
+    background-color: #F7F7F7;
+}
+
+main .code .code__bg {
+    padding: 30px 25px;
+    background-color: #EEEEEE;
+}
+
+main .code .code__bg .text .c {
+    color: #4f9fcf;
+}
+
+main .code .code__bg .text .d {
+    color: #d44950;
+}
+
+main .fluid__example {
+    padding: 40px 20px;
+}
+
+main .fluid__example .left {
+    height: 150px;
+    width: 100%;
+    background-color: #F9F8FF;
+}
+
+main .fluid__example .right {
+    height: 150px;
+    width: 80px;
+    background-color: #5F5A5A;
+}
+
+main .display {
+    padding: 50px 40px;
+}
+
+main .display h1:first-child {
+    font-size: 120px;
+    font-weight: 300;
+}
+
+main .display h1:nth-child(2) {
+    font-size: 110px;
+    font-weight: 300;
+}
+
+main .display h1:nth-child(3) {
+    font-size: 91px;
+    font-weight: 300;
+}
+
+main .display h1:nth-child(4) {
+    font-size: 72px;
+    font-weight: 300;
+}
+
+main .blockquotes {
+    padding: 30px 40px;
+}
+
+main .blockquotes .blockquotes__bg {
+    padding: 40px 20px;
+}
+
+main .blockquotes .blockquotes__bg p {
+    font-size: 18px;
+}
+
+main .blockquotes .blockquotes__bg footer {
+    font-size: 16px;
+}
+
+
+/* END OVERVIEW */
