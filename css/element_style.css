@@ -391,4 +391,136 @@ main .buttons .buttons__bg button:last-child:focus {
     box-shadow: none;
 }
 /* END BUTTON */
+
+/* OUTLINE BUTTONS */
+main .outline .outline__bg {
+    padding: 40px;
+}
+
+main .outline .outline__bg button:first-child {
+    color: #FF6600;
+    border: 1px solid #FF6600;
+    transition: all 0.5s;
+}
+main .outline .outline__bg button:first-child:hover {
+    color: white;
+    background-color: #FF6600;
+    border: 1px solid #FF6600;
+}
+main .outline .outline__bg button:first-child:focus {
+    box-shadow: 0 0 0 0.2rem rgba(123, 89, 208, 0.5);
+}
+
+main .outline .outline__bg button:nth-child(2) {
+    color: #f8b195;
+    border: 1px solid #f8b195;
+    transition: all 0.5s;
+}
+main .outline .outline__bg button:nth-child(2):hover {
+    color: black;
+    background-color: #f8b195;
+    border: 1px solid #f8b195;
+}
+main .outline .outline__bg button:nth-child(2):focus {
+    box-shadow: 0 0 0 0.2rem rgba(248, 177, 149, 0.5);
+}
+
+main .outline .outline__bg button:nth-child(3) {
+    color: #28a745;
+    border: 1px solid #28a745;
+    transition: all 0.5s;
+}
+main .outline .outline__bg button:nth-child(3):hover {
+    color: white;
+    background-color: #28a745;
+    border: 1px solid #28a745;
+}
+main .outline .outline__bg button:nth-child(3):focus {
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+}
+
+main .outline .outline__bg button:nth-child(4) {
+    color: #dc3545;
+    border: 1px solid #dc3545;
+    transition: all 0.5s;
+}
+main .outline .outline__bg button:nth-child(4):hover {
+    color: white;
+    background-color: #dc3545;
+    border: 1px solid #dc3545;
+}
+main .outline .outline__bg button:nth-child(4):focus {
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+}
+
+main .outline .outline__bg button:nth-child(5) {
+    color: #ffc107;
+    border: 1px solid #ffc107;
+    transition: all 0.5s;
+}
+main .outline .outline__bg button:nth-child(5):hover {
+    color: black;
+    background-color: #ffc107;
+    border: 1px solid #ffc107;
+}
+main .outline .outline__bg button:nth-child(5):focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
+}
+
+main .outline .outline__bg button:nth-child(6) {
+    color: #17a2b8;
+    border: 1px solid #17a2b8;
+    transition: all 0.5s;
+}
+main .outline .outline__bg button:nth-child(6):hover {
+    color: white;
+    background-color: #17a2b8;
+    border: 1px solid #17a2b8;
+}
+main .outline .outline__bg button:nth-child(6):focus {
+    box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
+}
+
+main .outline .outline__bg button:nth-child(7) {
+    color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    transition: all 0.5s;
+}
+main .outline .outline__bg button:nth-child(7):hover {
+    color: black;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+}
+main .outline .outline__bg button:nth-child(7):focus {
+    box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+}
+
+main .outline .outline__bg button:nth-child(8) {
+    color: #343a40;
+    border: 1px solid #343a40;
+    transition: all 0.5s;
+}
+main .outline .outline__bg button:nth-child(8):hover {
+    color: white;
+    background-color: #343a40;
+    border: 1px solid #343a40;
+}
+main .outline .outline__bg button:nth-child(8):focus {
+    box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+}
+/* END OUTLINE BUTTONS */
+
+/* FLEX */
+main h5 {
+    color: #FF6600;
+}
+
+main .flex {
+    padding: 30px;
+}
+
+main .flex .flex__bg {
+    background-color: #F7F7F7;
+}
+/* END FLEX */
 /* END OVERVIEW */
