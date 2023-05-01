@@ -237,5 +237,23 @@ main .blockquotes .blockquotes__bg footer {
     font-size: 16px;
 }
 
+main .jumbotron__bg {
+    padding: 50px 30px 40px 30px;
+    background-color: #F9F8FF;
+}
+
+main .jumbotron__bg .jumbotron .btn {
+    background-color: #FF6600;
+    border: 1px solid transparent;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+main .jumbotron__bg .jumbotron .btn:hover {
+    background-color: #FF6600;
+    border: 1px solid transparent;
+    opacity: 0.8;
+}
+
 
 /* END OVERVIEW */
