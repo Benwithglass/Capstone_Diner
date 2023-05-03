@@ -593,7 +593,148 @@ main .badges .badge__bg span {
     color: black;
     background-color: #f8b195;;
 }
-
-
 /* END BADGES */
+
+/* LISTS */
+main .list {
+    width: 100%;
+}
+
+main .list .list__left {
+    width: 50%;
+}
+
+main .list .list__right {
+    width: 50%;
+}
+
+main .list .list__left .group {
+    padding: 30px;
+}
+
+main .list .list__left .group .group__bg ul li{
+    background-color: #F7F7F7;
+}
+
+main .list .list__right .item {
+    padding: 30px;
+}
+
+main .list .list__right .item .item__bg ul li:first-child {
+    color: white;
+    background-color: #FF6600;
+    border: 1px solid #FF6600;
+}
+
+main .list .list__right .item .item__bg ul li{
+    background-color: #F7F7F7;
+}
+
+main .list .list__left .flush {
+    padding: 30px;
+}
+
+main .list .list__left .flush .flush__bg ul li{
+    background-color: #F7F7F7;
+}
+
+main .list .list__right .with {
+    padding: 30px;
+}
+
+main .list .list__right .with .with__bg ul li{
+    background-color: #F7F7F7;
+}
+
+main .list .list__right .with .with__bg ul span{
+    background-color: #FF6600;
+}
+/* END LISTS */
+
+/* BREADCRUMB */
+main .bread {
+    padding: 30px;
+}
+
+main .bread .bread__bg nav ol {
+    padding: 10px;
+    background-color: #F7F7F7;
+}
+
+main .bread .bread__bg nav a {
+    color: #FF6600;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+main .bread .bread__bg nav a:hover {
+    color: #5431ac;
+}
+/* END BREADCRUMB */
+
+/* TABLES */
+main .bang {
+    padding: 30px 30px 40px 30px;
+}
+
+main .bang .bang__bg th {
+    width: 25%;
+    border: 1px solid #DDDDDD;
+    background-color: #F9F8FF;
+}
+
+main .bang .bang__bg td {
+    width: 25%;
+    border: 1px solid #DDDDDD;
+}
+
+main .bang .bang__bg tr:nth-child(2) {
+    background-color: #F9F8FF;
+}
+
+main .bang .bang__bg #highlight {
+    background-color: #EDECF3;
+}
+/* END TABLES */
+
+/* STRIPED ROWS */
+main .stripe {
+    padding: 30px 30px 40px 30px;
+}
+
+main .stripe .stripe__bg th {
+    width: 25%;
+    border: 1px solid #DDDDDD;
+    background-color: #F9F8FF;
+}
+
+main .stripe .stripe__bg td {
+    width: 25%;
+    border: 1px solid #DDDDDD;
+}
+
+main .stripe .stripe__bg tr:nth-child(2) {
+    background-color: #F2F2F2
+}
+
+main .stripe .stripe__bg #highlight {
+    background-color: #EDECF3;
+}
+/* END STRIPED ROWS */
+
+/* LIVE DEMO */
+main .live {
+    padding: 30px;
+}
+
+main .live .live__bg .btn {
+    background-color: #FF6600;
+    border: 1px solid #FF6600;
+}
+
+main .live .live__bg #cam_nhat {
+    background-color: #F69772;
+}
+/* END LIVE DEMO */
+
 /* END OVERVIEW */
