@@ -584,9 +584,14 @@ main .justify .p-2 {
 /* END JUSTIFY CONTENT */
 
 /* BADGES */
-main .badge {
+main .badges {
     padding: 30px;
     width: 100%;
+}
+
+main .badges .badge__bg span {
+    color: black;
+    background-color: #f8b195;;
 }
 
 
