@@ -173,6 +173,10 @@ main .code .code__bg {
     background-color: #EEEEEE;
 }
 
+main .code .code__bg pre {
+    margin-bottom: 0;
+}
+
 main .code .code__bg .text .c {
     color: #4f9fcf;
 }
@@ -522,5 +526,69 @@ main .flex {
 main .flex .flex__bg {
     background-color: #F7F7F7;
 }
+
+main .inline {
+    padding: 30px;
+}
+
+main .inline .inline__bg {
+    background-color: #F7F7F7;
+    width:fit-content ;
+}
+
+main .direction .direction__left {
+    width: 50%;
+}
+
+main .direction .direction__right {
+    width: 50%;
+}
+
+main .direction .direction__left .row {
+    padding: 30px;
+    margin: 0 0;
+}
+
+main .direction .direction__left .row .row__bg {
+    background-color: #F7F7F7;
+    padding: 0 0;
+}
+
+main .direction .direction__right .reverse {
+    padding: 30px;
+    margin: 0 0;
+}
+
+main .direction .direction__right .reverse .reverse__bg {
+    background-color: #F7F7F7;
+    padding: 0 0;
+}
+
+main .direction .p-2 {
+    border: 1px solid white;
+}
 /* END FLEX */
+
+/* JUSTIFY CONTENT */
+main .justify {
+    padding: 30px;
+}
+
+main .justify .justify__bg .d-flex{
+    background-color: #F7F7F7;
+}
+
+main .justify .p-2 {
+    border: 1px solid white;
+}
+/* END JUSTIFY CONTENT */
+
+/* BADGES */
+main .badge {
+    padding: 30px;
+    width: 100%;
+}
+
+
+/* END BADGES */
 /* END OVERVIEW */
