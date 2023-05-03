@@ -730,11 +730,84 @@ main .live {
 main .live .live__bg .btn {
     background-color: #FF6600;
     border: 1px solid #FF6600;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+main .live .live__bg .btn:hover {
+    background-color: #FF6600;
+    border: 1px solid #FF6600;
+    opacity: 0.8;
+}
+
+main .live .live__bg .btn:focus {
+    background-color: #FF6600;
+    border: 1px solid #FF6600;
+    box-shadow: 0 0 0 0.2rem rgba(143, 114, 215, 0.5);
+}
+
+main .live .live__bg .btn:active {
+    background-color: #FF6600;
+    border: 1px solid #5933b6;
 }
 
 main .live .live__bg #cam_nhat {
+    color: black;
     background-color: #F69772;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+main .live .live__bg #cam_nhat:hover {
+    color: black;
+    background-color: #F69771;
+    border-color: #f58e65;
+    opacity: 1;
 }
 /* END LIVE DEMO */
+
+/* VERTICALLY */
+main .verti {
+    padding: 30px;
+}
+
+main .verti .verti__bg .btn {
+    background-color: #FF6600;
+    border: 1px solid #FF6600;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+main .verti .verti__bg .btn:hover {
+    background-color: #FF6600;
+    border: 1px solid #FF6600;
+    opacity: 0.8;
+}
+
+main .verti .verti__bg .btn:focus {
+    background-color: #FF6600;
+    border: 1px solid #FF6600;
+    box-shadow: 0 0 0 0.2rem rgba(143, 114, 215, 0.5);
+}
+
+main .verti .verti__bg .btn:active {
+    background-color: #FF6600;
+    border: 1px solid #5933b6;
+}
+
+main .verti .verti__bg #cam_nhat {
+    color: black;
+    background-color: #F69772;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+main .verti .verti__bg #cam_nhat:hover {
+    color: black;
+    background-color: #F69771;
+    border-color: #f58e65;
+    opacity: 1;
+}
+/* END VERTICALLY */
 
 /* END OVERVIEW */
