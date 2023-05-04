@@ -104,6 +104,116 @@ header form i:last-child {
     color: white !important;
 }
 
+.dark main .bg .left {
+    background-color: #282828;
+}
+
+.dark main .code {
+    background-color: #282828;
+}
+
+.dark main .fluid__example .left {
+    background-color: #282828;
+}
+
+.dark main h4 {
+    color: white !important;
+}
+
+.dark main .jumbotron__bg {
+    background-color: #282828;
+}
+
+.dark main .buttons .buttons__bg button:last-child {
+    color: #FF6600;
+    background-color: #404040;
+    border-color: #404040;
+    transition: all 0.5s;
+}
+
+.dark main .buttons .buttons__bg button:last-child:hover {
+    color: blue;
+    text-decoration: underline;
+    background-color: #404040;
+    border: 1px solid white;
+}
+
+.dark main .buttons .buttons__bg button:nth-child(8):focus {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+    box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
+}
+
+.dark main .flex__bg .d-flex {
+    background-color: #282828;
+}
+
+.dark main .inline__bg .d-inline-flex {
+    background-color: #282828;
+}
+
+.dark main .direction .direction__left .row .row__bg {
+    background-color: #282828;
+}
+
+.dark main .direction .direction__left .row .row__bg .p-2 {
+    border: 1px solid #404040;
+}
+
+.dark main .direction .direction__right .reverse .reverse__bg {
+    background-color: #282828;
+}
+
+.dark main .direction .direction__right .reverse .reverse__bg .p-2 {
+    border: 1px solid #404040;
+}
+
+.dark main .badges .badge__bg {
+    color: white !important;
+}
+
+.dark main .justify .justify__bg .d-flex{
+    background-color: #282828;
+}
+
+.dark main .justify .justify__bg .p-2 {
+    border: 1px solid #404040;
+}
+
+.dark main .badges .badge__bg h5 {
+    color: #404040;
+}
+
+.dark main .list .list__left .group__bg ul li {
+    background-color: #282828 !important;
+    color: white;
+}
+
+.dark main .list .list__left .flush__bg ul li {
+    background-color: #282828 !important;
+    color: white;
+}
+
+.dark main .list .list__right .item__bg ul .list-group-item:first-child {
+    background-color: #FF6600 !important;
+    color: white;
+}
+
+.dark main .list .list__right .item__bg ul .list-group-item {
+    background-color: #282828 !important;
+    color: white;
+}
+
+.dark main .list .list__right .with__bg ul li {
+    background-color: #282828 !important;
+    color: white;
+}
+
+.dark main .bread .bread__bg ol {
+    background-color: #282828 !important;
+}
+
 header nav a {
     text-decoration: none;
     /* color: black; */
@@ -123,7 +233,7 @@ header ol li a {
 
 /* OVERVIEW */
 main {
-    padding: 85px 0;
+    padding: 85px 0 120px 0;
     font-family: 'Quicksand', sans-serif;
     scroll-behavior: smooth;
 }
@@ -175,6 +285,14 @@ main .code .code__bg {
 
 main .code .code__bg pre {
     margin-bottom: 0;
+}
+
+main .code .code__bg .text .a {
+    color: black;
+}
+
+main .code .code__bg .text .b {
+    color: black;
 }
 
 main .code .code__bg .text .c {
@@ -267,6 +385,14 @@ main .buttons .buttons__bg {
 main .buttons .buttons__bg button:first-child {
     background-color: #FF6600;
     border: 1px solid transparent;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+main .buttons .buttons__bg button:first-child:hover {
+    background-color: #FF6600;
+    border: 1px solid transparent;
+    opacity: 0.8;
     transition: all 0.5s;
 }
 
@@ -280,7 +406,15 @@ main .buttons .buttons__bg button:nth-child(2) {
     background-color: #f8b195;
     color: #212529;
     border: 1px solid transparent;
+    opacity: 1;
     transition: all 0.5s;
+}
+
+main .buttons .buttons__bg button:nth-child(2):hover {
+    background-color: #f8b195;
+    color: #212529;
+    border: 1px solid transparent;
+    opacity: 0.8;
 }
 
 main .buttons .buttons__bg button:nth-child(2):focus {
@@ -293,8 +427,16 @@ main .buttons .buttons__bg button:nth-child(2):focus {
 main .buttons .buttons__bg button:nth-child(3) {
     color: #fff;
     background-color: #28a745;
-    border-color: #28a745;;
+    border-color: #28a745;
+    opacity: 1;
     transition: all 0.5s;
+}
+
+main .buttons .buttons__bg button:nth-child(3):hover {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    opacity: 0.8;
 }
 
 main .buttons .buttons__bg button:nth-child(3):focus {
@@ -308,7 +450,15 @@ main .buttons .buttons__bg button:nth-child(4) {
     color: #fff;
     background-color: #dc3545;
     border-color: #dc3545;
+    opacity: 1;
     transition: all 0.5s;
+}
+
+main .buttons .buttons__bg button:nth-child(4):hover {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    opacity: 0.8;
 }
 
 main .buttons .buttons__bg button:nth-child(4):focus {
@@ -322,7 +472,15 @@ main .buttons .buttons__bg button:nth-child(5) {
     color: #212529;
     background-color: #ffc107;
     border-color: #ffc107;
+    opacity: 1;
     transition: all 0.5s;
+}
+
+main .buttons .buttons__bg button:nth-child(5):hover {
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+    opacity: 0.8;
 }
 
 main .buttons .buttons__bg button:nth-child(5):focus {
@@ -336,7 +494,15 @@ main .buttons .buttons__bg button:nth-child(6) {
     color: #212529;
     background-color: #17a2b8;
     border-color: #17a2b8;
+    opacity: 1;
     transition: all 0.5s;
+}
+
+main .buttons .buttons__bg button:nth-child(6):hover {
+    color: #212529;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    opacity: 0.8;
 }
 
 main .buttons .buttons__bg button:nth-child(6):focus {
@@ -350,7 +516,15 @@ main .buttons .buttons__bg button:nth-child(7) {
     color: #212529;
     background-color: #f8f9fa;
     border-color: #f8f9fa;
+    opacity: 1;
     transition: all 0.5s;
+}
+
+main .buttons .buttons__bg button:nth-child(7):hover {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    opacity: 0.8;
 }
 
 main .buttons .buttons__bg button:nth-child(7):focus {
@@ -364,7 +538,15 @@ main .buttons .buttons__bg button:nth-child(8) {
     color: #fff;
     background-color: #343a40;
     border-color: #343a40;
+    opacity: 1;
     transition: all 0.5s;
+}
+
+main .buttons .buttons__bg button:nth-child(8):hover {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+    opacity: 0.8;
 }
 
 main .buttons .buttons__bg button:nth-child(8):focus {
@@ -378,7 +560,15 @@ main .buttons .buttons__bg button:last-child {
     color: #fff;
     background-color: #343a40;
     border-color: #343a40;
+    opacity: 1;
     transition: all 0.5s;
+}
+
+main .buttons .buttons__bg button:last-child:hover {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+    opacity: 0.8;
 }
 
 main .buttons .buttons__bg button:last-child{
@@ -589,6 +779,15 @@ main .badges {
     width: 100%;
 }
 
+main .badges .badge__bg h4 {
+    color: black;
+    font-weight: 900;
+}
+
+main .badges .badge__bg h5 {
+    color: black;
+}
+
 main .badges .badge__bg span {
     color: black;
     background-color: #f8b195;;
@@ -786,7 +985,7 @@ main .verti .verti__bg .btn:hover {
 
 main .verti .verti__bg .btn:focus {
     background-color: #FF6600;
-    border: 1px solid #FF6600;
+    border: 2px solid #FF6600;
     box-shadow: 0 0 0 0.2rem rgba(143, 114, 215, 0.5);
 }
 
@@ -810,4 +1009,194 @@ main .verti .verti__bg #cam_nhat:hover {
 }
 /* END VERTICALLY */
 
+/* FORMS */
+main .forms {
+    padding: 30px;
+}
+
+main .forms .forms__bg form input {
+    background-color: #F9F8FF;
+}
+
+main .forms .forms__bg form .btn {
+    background-color: #FF6600;
+    border: 1px solid #FF6600;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+main .forms .forms__bg form .btn:hover {
+    background-color: #FF6600;
+    border: 1px solid #FF6600;
+    opacity: 0.8;
+}
+
+main .forms .forms__bg form .btn:focus {
+    background-color: #FF6600;
+    border: 2px solid #FF6600;
+    box-shadow: 0 0 0 0.2rem rgba(143, 114, 215, 0.5);
+}
+
+main .forms .forms__bg form .btn:active {
+    background-color: #FF6600;
+    border: 1px solid #5933b6;
+}
+/* END FORMS */
+
+/* READONLY */
+main .read {
+    padding: 40px 25px;
+}
+
+main .read .read__bg form #inputPassword {
+    background-color: #F9F8FF;
+}
+/* END READONLY */
+
+/* FOOTER */
+footer {
+    background-color: black;
+    padding: 85px 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* DINER */
+footer .diner .text a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+    font-size: 20px;
+}
+
+footer .diner .text a:hover {
+    color: #FF6600;
+}
+
+footer .icons .bg {
+    width: 36px;
+    height: 36px;
+    position: relative;
+    transition: all 0.5s;
+    background-color: white;
+}
+
+footer .icons .bg i {
+    position: absolute;
+    top: 17px;
+    left: 17px;
+    font-size: 17px;
+    color: #FF6600;
+}
+
+footer .icons .bg:hover {
+    background-color: #FF6600;
+}
+
+footer .icons .bg:hover i {
+    color: white;
+}
+/* END DINER */
+
+/* CATEGORIES */
+footer .categories {
+    color: white;
+}
+
+footer .categories p {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+footer .categories p:hover {
+    color: #FF6600;
+}
+/* END CATEGORIES */
+
+/* ARCHIVES */
+footer .archive {
+    color: white;
+}
+
+footer .archive p {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+footer .archive p:hover {
+    color: #FF6600;
+}
+/* END ARCHIVES */
+
+/* SUBCRIBE */
+footer .subcribe {
+    color: white;
+}
+
+Footer .subcribe .mb-3 input {
+    height: 50px;
+    width: 100%;
+}
+
+footer .subcribe .button button {
+    height: 50px;
+    width: 100%;
+    background-color: #FF6600;
+    border: 1px solid transparent;
+    opacity: 1;
+    transition: all 0.5s;
+    /* padding: 10px 133px; */
+}
+
+footer .subcribe .btn:hover{
+    background-color: #FF6600;
+    opacity: 0.8;
+    color: white;
+}
+/* END SUBCRIBE */
+
+/* BACK TO TOP */
+.backtotop {
+    width: 50px;
+    height: 50px;
+    background-color: #FF6600;
+    position: sticky;
+    right: 23px;
+    bottom: 50px;
+    transition: all 0.5s;
+    /* opacity: 1; */
+    /* pointer-events: none; */
+}
+
+/* .backtotop.active {
+    bottom: 32px;
+    opacity: 1;
+    pointer-events: auto;
+} */
+
+.backtotop a {
+    color: white;
+}
+/* END BACK TO TOP */
+
+/* COPYRIGHT */
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.103);
+    padding: 10px 0;
+}
+
+.copyright .text {
+    gap: 5px;
+}
+
+.copyright .text a {
+    color: #FF6600;
+    text-decoration: none;
+}
+
+.copyright .text a:hover {
+    color: white;
+}
+/* END COPYRIGHT */
+
+/* END FOOTER */
 /* END OVERVIEW */
