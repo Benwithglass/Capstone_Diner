@@ -9,6 +9,9 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: white;
+}
 /* HEADER */
 header {
     background-image:linear-gradient(to right, rgb(236 98 6 / 98%), rgb(5 3 0 / 83%)), url(./../img/banner2.jpg);
@@ -51,7 +54,7 @@ header form i:last-child {
 
 /* Tương lai u tối */
 .dark#myBody {
-    background-color: #404040;
+    background-color: #232220;
 }
 
 .dark #switchButton #sun {
@@ -212,6 +215,32 @@ header form i:last-child {
 
 .dark main .bread .bread__bg ol {
     background-color: #282828 !important;
+}
+
+.dark main .bang .bang__bg th {
+    width: 25%;
+    border: 1px solid #DDDDDD;
+    background-color: #282828;
+    color: white;
+}
+
+.dark main .bang .bang__bg td {
+    width: 25%;
+    border: 1px solid #DDDDDD;
+}
+
+.dark  main .bang .bang__bg tr:nth-child(1) {
+    background-color: #282828;
+    color: white;
+}
+
+.dark  main .bang .bang__bg #highlight {
+    background-color: #282828;
+    color: white;
+}
+
+.dark  main .bang .bang__bg tr:nth-child(2) {
+    background-color: #F9F8FF;
 }
 
 header nav a {
