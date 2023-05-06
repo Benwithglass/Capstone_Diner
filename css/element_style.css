@@ -1259,7 +1259,7 @@ main .read .read__bg form #inputPassword {
 /* FOOTER */
 footer {
     background-color: black;
-    padding: 85px 0;
+    padding: 85px 0 0 0;
     font-family: 'Quicksand', sans-serif;
 }
 
