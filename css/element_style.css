@@ -434,6 +434,28 @@ header ol li a {
 }
 /* END HEADER */
 
+/* MENU POP UP */
+.modal {
+    background-color: rgba(7,10,12,.50);
+
+}
+
+.modal .modal-content {
+    background-color: rgba(0, 0, 0, 0.007);
+}
+
+.modal .modal-content a {
+    color: white;
+    font-size: 25px;
+    transition: all 0.5s;
+}
+
+.modal .modal-content a:hover {
+    color: #FF6600;
+}
+
+/* END MENU POP UP */
+
 /* OVERVIEW */
 main {
     padding: 85px 0 120px 0;
