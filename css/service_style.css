@@ -52,7 +52,7 @@ header form i:last-child {
 
 /* Tương lai u tối */
 .dark#myBody {
-    background-color: #404040;
+    background-color: #232220;
 }
 
 .dark #switchButton #sun {
@@ -65,13 +65,41 @@ header form i:last-child {
     display: none;
 }
 
+.dark main {
+    background-color: #232220;
+}
+
 .dark .navbar input {
     border: 1px solid transparent;
+    background-color: #232220;
+    color: white;
+}
+
+.dark .navbar input:focus {
+    box-shadow: none;
+}
+
+.dark .subcribe input {
+    background-color: #232220;
+    box-shadow: none;
+    color: white;
+}
+
+.dark .subcribe input:focus {
+    border: 1px solid #FF6600;
 }
 
 .dark .offer {
-    background-color: #404040;
+    background-color: #232220;
     color: white !important;
+}
+
+.dark .food .row .col {
+    border: 2px solid #404040 !important;
+}
+
+.dark .food .row .col .title .logo {
+    background-color: #282828 !important;
 }
 
 .dark input {
@@ -79,21 +107,29 @@ header form i:last-child {
 }
 
 .dark .food {
-    background-color: #404040;
+    /* background-color: #404040; */
     color: white !important;
 }
 
 .dark .menu {
-    background-color: #404040;
+    /* background-color: #404040; */
     color: white !important;
 }
 
 .dark .icons .bg{
-    background-color: #404040;
+    background-color: #232220;
 }
 
 .dark .subcribe input {
     border: 1px solid transparent;
+}
+
+.dark .menu .dishes .left .item .price {
+    border-bottom: 2px dotted white;
+}
+
+.dark .menu .dishes .right .item .price {
+    border-bottom: 2px dotted white;
 }
 
 header nav a {
@@ -219,18 +255,23 @@ header ol li a {
     transition: all 0.5s;
 }
 
-.contact .boxes button:nth-child(1):hover {
-    color: orangered;
+.contact .boxes .left button:hover {
+    color: #FF6600;
 }
 
-.contact .boxes button:nth-child(2) {
-    background-color: orangered;
-    border: 1px solid transparent;
+.contact .boxes .right button {
+    color: white;
+    background-color: #FF6600;
+    opacity: 1;
+    transition: all 0.5s;
 }
 
-.contact .boxes button:nth-child(2):hover {
+.contact .boxes .right button:hover {
     opacity: 0.9;
 }
+
+
+
 /* END CONTACT */
 
 /* MENU */
@@ -289,27 +330,23 @@ footer {
     font-family: 'Quicksand', sans-serif;
 }
 
-footer .content {
-    padding: 0 0 85px 0;
-}
-
+/* DINER */
 footer .diner {
-    width: 30%;
-    padding: 0 35px 0 0;
+    padding: 10px 32px;
 }
 
-footer .diner a {
+footer .diner .text a {
     text-decoration: none;
     color: white;
     transition: all 0.5s;
-    font-size: 30px;
+    font-size: 20px;
 }
 
-footer .diner a:hover {
+footer .diner .text a:hover {
     color: #FF6600;
 }
 
-footer .bg {
+footer .icons .bg {
     width: 36px;
     height: 36px;
     position: relative;
@@ -317,28 +354,26 @@ footer .bg {
     background-color: white;
 }
 
-footer .bg i {
+footer .icons .bg i {
     position: absolute;
-    top: 15px;
-    left: 18px;
+    top: 17px;
+    left: 17px;
     font-size: 17px;
     color: #FF6600;
 }
 
-footer .bg:hover {
+footer .icons .bg:hover {
     background-color: #FF6600;
 }
 
-footer .bg:hover i {
+footer .icons .bg:hover i {
     color: white;
 }
+/* END DINER */
 
+/* CATEGORIES */
 footer .categories {
     color: white;
-}
-
-footer .categories h1 {
-    font-size: 32px;
 }
 
 footer .categories p {
@@ -349,13 +384,11 @@ footer .categories p {
 footer .categories p:hover {
     color: #FF6600;
 }
+/* END CATEGORIES */
 
+/* ARCHIVES */
 footer .archive {
     color: white;
-}
-
-footer .archive h1 {
-    font-size: 32px;
 }
 
 footer .archive p {
@@ -366,30 +399,35 @@ footer .archive p {
 footer .archive p:hover {
     color: #FF6600;
 }
+/* END ARCHIVES */
 
+/* SUBCRIBE */
 footer .subcribe {
     color: white;
+    padding: 0px 32px;
 }
 
-footer .subcribe h1 {
-    font-size: 32px;
-}
-
-footer #Email {
-    padding: 10px 40px
+Footer .subcribe .mb-3 input {
+    height: 50px;
+    width: 333px;
 }
 
 footer .subcribe .button button {
+    height: 50px;
+    width: 333px;
     background-color: #FF6600;
     border: 1px solid transparent;
+    opacity: 1;
     transition: all 0.5s;
-    padding: 10px 133px;
+    /* padding: 10px 133px; */
 }
 
-footer .subcribe .button:hover{
-    opacity: 0.9;
+footer .subcribe .btn:hover{
+    background-color: #FF6600;
+    opacity: 0.8;
+    color: white;
 }
-/* END FOOTER */
+/* END SUBCRIBE */
 
 /* BACK TO TOP */
 .backtotop {
@@ -434,3 +472,5 @@ footer .subcribe .button:hover{
     color: white;
 }
 /* END COPYRIGHT */
+
+/* END FOOTER */
