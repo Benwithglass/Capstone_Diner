@@ -51,7 +51,7 @@ header form i:last-child {
 
 /* Tương lai u tối */
 .dark#myBody {
-    background-color: #404040;
+    background-color: #232220;
 }
 
 .dark #switchButton #sun {
@@ -65,16 +65,16 @@ header form i:last-child {
 }
 
 .dark .navbar input {
-    border: 1px solid white;
+    border: 1px solid transparent;
 }
 
 .dark .navbar input:focus {
-    border: 1px solid #FF6600;
-    background-color: #404040;
+    border: 1px solid transparent;
+    background-color: #232220;
 }
 
 .dark input {
-    background-color: #404040;
+    background-color: #232220;
 }
 
 .dark input:focus {
@@ -87,11 +87,12 @@ header form i:last-child {
 }
 
 .dark .icons .bg{
-    background-color: #404040;
+    background-color: #232220;
 }
 
 .dark .subcribe input {
-    border: 1px solid white;
+    border: 1px solid transparent;
+    box-shadow: none;
 }
 
 .dark .subcribe #Email:focus {
@@ -100,8 +101,16 @@ header form i:last-child {
 }
 
 .dark main {
-    background-color: #404040;
+    background-color: #232220;
     color: white !important;
+}
+
+.dark main .bg input {
+    box-shadow: none;
+}
+
+.dark main .bg input:focus {
+    box-shadow: none;
 }
 
 header nav a {
@@ -171,7 +180,7 @@ header ol li a {
     font-weight: 700;
     position: absolute;
     top: 7px;
-    left: 468px;
+    left: 557px;
 }
 
 .content a p {
