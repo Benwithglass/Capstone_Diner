@@ -53,7 +53,7 @@ header form i:last-child {
 }
 
 /* Tương lai u tối */
-.dark#myBody {
+.dark #myBody {
     background-color: #232220;
 }
 
@@ -68,16 +68,16 @@ header form i:last-child {
 }
 
 .dark .navbar input {
-    border: 1px solid white;
+    border: 1px solid transparent;
 }
 
 .dark .navbar input:focus {
-    border: 1px solid #FF6600;
-    background-color: #404040;
+    border: 1px solid transparent;
+    background-color: #232220;
 }
 
 .dark input {
-    background-color: #404040;
+    background-color: #232220;
 }
 
 .dark input:focus {
@@ -90,11 +90,12 @@ header form i:last-child {
 }
 
 .dark .icons .bg{
-    background-color: #404040;
+    background-color: #232220;
 }
 
 .dark .subcribe input {
-    border: 1px solid white;
+    border: 1px solid transparent;
+    box-shadow: none;
 }
 
 .dark .subcribe #Email:focus {
@@ -103,7 +104,7 @@ header form i:last-child {
 }
 
 .dark main {
-    background-color: #404040;
+    background-color: #232220;
     color: white !important;
 }
 
@@ -111,33 +112,57 @@ header form i:last-child {
     background-color: #282828;
 }
 
+.dark main .bg {
+    border: 2px solid #282828 !important;
+}
+
 .dark main .code {
     background-color: #282828;
+}
+
+.dark main .fluid__example {
+    border: 2px solid #282828 !important;
 }
 
 .dark main .fluid__example .left {
     background-color: #282828;
 }
 
+.dark main .display {
+    border: 2px solid #282828 !important;
+}
+
 .dark main h4 {
     color: white !important;
+}
+
+.dark main .blockquotes {
+    border: 2px solid #282828 !important;
+}
+
+.dark main .blockquotes .blockquotes__bg {
+    border: 2px solid #282828 !important;
 }
 
 .dark main .jumbotron__bg {
     background-color: #282828;
 }
 
+.dark main .buttons {
+    border: 2px solid #282828 !important;
+}
+
 .dark main .buttons .buttons__bg button:last-child {
     color: #FF6600;
-    background-color: #404040;
-    border-color: #404040;
+    background-color: #282828;
+    border-color: #282828;
     transition: all 0.5s;
 }
 
 .dark main .buttons .buttons__bg button:last-child:hover {
     color: blue;
     text-decoration: underline;
-    background-color: #404040;
+    background-color: #282828;
     border: 1px solid white;
 }
 
@@ -148,28 +173,64 @@ header form i:last-child {
     box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
 }
 
+.dark main .outline {
+    border: 2px solid #282828 !important;
+}
+
+.dark main .flex {
+    border: 2px solid #282828 !important;
+}
+
 .dark main .flex__bg .d-flex {
     background-color: #282828;
+    color: #404040;
+}
+
+.dark main .inline {
+    border: 2px solid #282828 !important;
 }
 
 .dark main .inline__bg .d-inline-flex {
     background-color: #282828;
+    color: #404040;
+}
+
+.dark main .direction .direction__left .row {
+    border: 2px solid #282828 !important;
 }
 
 .dark main .direction .direction__left .row .row__bg {
     background-color: #282828;
+    color: #404040;
 }
 
 .dark main .direction .direction__left .row .row__bg .p-2 {
     border: 1px solid #404040;
 }
 
+.dark main .direction .direction__right .reverse {
+    border: 2px solid #282828 !important;
+}
+
 .dark main .direction .direction__right .reverse .reverse__bg {
     background-color: #282828;
+    color: #404040;
 }
 
 .dark main .direction .direction__right .reverse .reverse__bg .p-2 {
     border: 1px solid #404040;
+}
+
+.dark main .justify {
+    border: 2px solid #282828 !important;
+}
+
+.dark main .justify .d-flex {
+    color: #404040;
+}
+
+.dark main .badges {
+    border: 2px solid #282828 !important;
 }
 
 .dark main .badges .badge__bg {
@@ -188,14 +249,26 @@ header form i:last-child {
     color: #404040;
 }
 
+.dark main .group {
+    border: 2px solid #282828 !important;
+}
+
 .dark main .list .list__left .group__bg ul li {
     background-color: #282828 !important;
-    color: white;
+    color: #404040;
+}
+
+.dark main .flush {
+    border: 2px solid #282828 !important;
 }
 
 .dark main .list .list__left .flush__bg ul li {
     background-color: #282828 !important;
-    color: white;
+    color: #404040;
+}
+
+.dark main .item {
+    border: 2px solid #282828 !important;
 }
 
 .dark main .list .list__right .item__bg ul .list-group-item:first-child {
@@ -205,16 +278,28 @@ header form i:last-child {
 
 .dark main .list .list__right .item__bg ul .list-group-item {
     background-color: #282828 !important;
-    color: white;
+    color: #404040;
+}
+
+.dark main .with {
+    border: 2px solid #282828 !important;
 }
 
 .dark main .list .list__right .with__bg ul li {
     background-color: #282828 !important;
-    color: white;
+    color: #404040;
+}
+
+.dark main .bread {
+    border: 2px solid #282828 !important;
 }
 
 .dark main .bread .bread__bg ol {
     background-color: #282828 !important;
+}
+
+.dark main .bang {
+    border: 2px solid #282828 !important;
 }
 
 .dark main .bang .bang__bg th {
@@ -230,7 +315,7 @@ header form i:last-child {
 }
 
 .dark  main .bang .bang__bg tr:nth-child(1) {
-    background-color: #282828;
+    background-color: #232220;
     color: white;
 }
 
@@ -241,6 +326,95 @@ header form i:last-child {
 
 .dark  main .bang .bang__bg tr:nth-child(2) {
     background-color: #F9F8FF;
+    color: #404040;
+}
+
+.dark  main .bang .bang__bg tr:nth-child(3) {
+    background-color: #282828;
+    color: white;
+}
+
+.dark main .stripe {
+    border: 2px solid #282828 !important;
+}
+
+.dark main .stripe .stripe__bg .table th {
+    background-color: #282828;
+    color: white;
+}
+
+.dark main .stripe .stripe__bg .table tr:nth-child(1) td{
+    background-color: #232220;
+    color: white;
+}
+
+.dark  main .stripe .stripe__bg tr:nth-child(2) {
+    background-color: #F9F8FF;
+    color: #404040;
+}
+
+.dark main .stripe .stripe__bg .table tr:nth-child(3) td{
+    background-color: #232220;
+    color: white;
+}
+
+.dark  main .stripe .stripe__bg #highlight {
+    background-color: #282828;
+    color: white;
+}
+
+.dark main .live {
+    border: 2px solid #282828 !important;
+}
+
+.dark main .live .live__bg #exampleModalLabel {
+    color: #FF6600 !important;
+}
+
+.dark main .live .live__bg .modal-body {
+    color: black;
+}
+
+.dark main .verti {
+    border: 2px solid #282828 !important;
+}
+
+.dark main .verti .verti__bg #exampleModalLabel {
+    color: #FF6600 !important;
+}
+
+.dark main .verti .verti__bg .modal-body {
+    color: black;
+}
+
+.dark main .forms {
+    border: 2px solid #282828 !important;
+    color: #404040;
+}
+
+.dark main .forms .forms__bg input {
+    background-color: #282828;
+    border: 1px solid white;
+}
+
+.dark main .forms .forms__bg input:focus {
+    background-color: #282828;
+    border: 1px solid white;
+    box-shadow: blueviolet;
+}
+
+.dark main .read {
+    border: 2px solid #282828 !important;
+    color: #404040;
+}
+
+.dark main .read .read__bg #staticEmail {
+    color: #666;
+}
+
+.dark main .read .read__bg #inputPassword {
+    background-color: #282828;
+    border: 1px solid white;
 }
 
 header nav a {
