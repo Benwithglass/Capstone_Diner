@@ -382,6 +382,11 @@ input.search-field {
     border-radius: 4px;
     display: block;
 }
+input.search-field:focus {
+    box-shadow: none;
+    background-color: #fff;
+    border: 1px solid #232121;
+}
 input.search-submit {
     text-align: center;
     vertical-align: middle;
