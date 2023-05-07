@@ -10,6 +10,63 @@ html {
     scroll-behavior: smooth;
 }
 
+/* RESPOSIVE */
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+/* xs */
+@media (min-width: 475px) {
+    .container {
+        max-width: 475px;
+    }
+}
+
+/* sm */
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
+
+/* md */
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+/* xl */
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    }
+}
+
+/* 2xl */
+html {
+    font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
+}
+/* END RESPONSIVE */
+
 /* HEADER */
 header {
     background-image:linear-gradient(to right, rgb(236 98 6 / 98%), rgb(5 3 0 / 83%)), url(./../img/banner2.jpg);
@@ -126,6 +183,25 @@ header form i:last-child {
 .dark section form #Message {
     background-color: #282828;
     color: white;
+}
+
+.dark .contact-view .cont-details h5 {
+    font-size: 20px;
+    color: white !important;
+    font-weight: 600;
+}
+
+.dark .contact-view .cont-details p {
+    font-size: 18px;
+    line-height: 28px;
+    color: white!important;
+}
+
+.dark .contact-view .cont-details p a {
+    font-size: 18px;
+    line-height: 28px;
+    color: white !important;
+    text-decoration: none;  
 }
 
 header nav a {
@@ -304,20 +380,20 @@ section {
 
 .contact-view .cont-details h5 {
     font-size: 20px;
-    color: #232121;
+    color: #232121 !important;
     font-weight: 600;
 }
 
 .contact-view .cont-details p {
     font-size: 18px;
     line-height: 28px;
-    color: rgba(22, 28, 45, 0.7);
+    color: rgba(22, 28, 45, 0.7) !important;
 }
 
 .contact-view .cont-details p a {
     font-size: 18px;
     line-height: 28px;
-    color: rgba(22, 28, 45, 0.7);
+    color: rgba(22, 28, 45, 0.7) !important;
     text-decoration: none;  
 }
 
