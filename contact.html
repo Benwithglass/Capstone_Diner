@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>404</title>
+  <title>Contact</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,8 +19,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
 
+<!-- Google font - Pacifico -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+
   <!-- File css -->
-  <link rel="stylesheet" href="./css/404_page_style.css">
+  <link rel="stylesheet" href="./css/contact.page.css">
 </head>
 <body id="myBody">
   <!-- HEADER -->
@@ -81,32 +86,99 @@
         </nav>
     </div>
   </header>
+
   <!-- END HEADER -->
-  <main>
-    <!-- 404 -->
-    <div class="container">
-        <div class="content text-center">
-            <h1>4<i class="fa-regular fa-face-frown"></i>4</h1>
-            <h3 class="mt-4">Oops, Page not found!</h3>
-            <p class="mt-4 fs-5">
-                Sorry, we're offline right now to make our site even better. Please,
-                <br>
-                comeback later and check what we've been upto.
+  <section class="contact py-5" id="contact">
+    <div class="contacts py-lg-5 py-md-4">
+      <div class="container">
+        <div class="contact-us map-content">
+          <div class="header-title text-center">
+            <h6>Get in touch</h6>
+            <h3 class="title mb-4">Contact Us</h3>
+            <p class="mb-sm-5 mb-4 text-white">
+              Start working with Us that can provide everything you need to generate awareness, drive traffic, connect.
+              <br>
+              We guarantee that you’ll be able to have any issue resolved within 24 hours.
             </p>
-            <form class="d-flex mt-5 justify-content-center" role="search">
-                <div class="bg">
-                    <input class="form-control me-4" type="search" placeholder="Enter your text" aria-label="Search">
-                </div>
-                <button class="btn" type="button">Search</button>
-            </form>
-            <a href="https://wp.w3layouts.com/diner/" class="d-flex justify-content-center mt-5" id="backtohome">
-                <i class="fa-sharp fa-solid fa-arrow-left me-3"></i>
-                <p>Back to Home</p>
-            </a>
+          </div>
+          <form action method="post">
+            <div class="twice-two">
+              <input type="text" class="form-control" name="Name" placeholder="Name" required>
+              <input type="email" class="form-control" name="Sender" placeholder="Email" required>
+              <input type="text" class="form-control" name="Subject" placeholder="Subject" required>
+            </div>
+            <textarea name="Message" class="form-control" id="Message" placeholder="Message" required></textarea>
+            <div class="text-right">
+              <button type="submit" class="btn btn-primary btn-style mt-4">Send Message</button>
+            </div>
+          </form>
         </div>
+      </div>
     </div>
-    <!-- END 404 -->
-  </main>
+  </section>
+  <!-- END CONTACT  -->
+
+  <!-- FIND US  -->
+  <section>
+    <div class="d-grid contact-view mb-5 mt-5 pt-pl-5">
+      <div class="cont-details ContactInfoSection">
+        <div class="contactct-fm-text text-left mb-md-5 mb-4">
+          <h6 class="title-sub">Find Us</h6>
+          <h3 class="title">Additional Info</h3>
+        </div>
+        <div class="cont-top">
+          <div class="cont-left text-center">
+            <span>
+              <i class="fa-solid fa-phone"></i>
+            </span>
+          </div>
+          <div class="cont-right">
+            <h5 class="text-white">Phone number</h5>
+            <p>
+              <a href="+(21) 255 088 4943" class="text-white">+(21) 255 088 4943</a>
+            </p>
+          </div>
+        </div>
+        <div class="cont-top margin-up">
+          <div class="cont-left text-center">
+            <span>
+              <i class="fa-regular fa-envelope"></i>
+            </span>
+          </div>
+          <div class="cont-right">
+            <h5 class="text-white">Send Email</h5>
+            <p>
+              <a href="mailto:ntran64634@gmail.com" class="text-white">diner@mail.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="cont-top margin-up">
+          <div class="cont-left text-center">
+            <span>
+              <i class="fa-solid fa-location-dot"></i>
+            </span>
+          </div>
+          <div class="cont-right">
+            <h5 class="text-white">Office Address</h5>
+            <p class="pr-lg-5 text-white">
+              Address here, 434 Food <br> Honey street, London, UK - 62617.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- CONTACT MAP SECTION  -->
+      <div class="map-content">
+        <div class="map-iframe">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.69319292053!2d-0.3817765050863085!3d51.528307984912544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C+UK!5e0!3m2!1sen!2spl!4v1562654563739!5m2!1sen!2spl"   width="100%" height="400" frameborder="0" style="border: 0px;" allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- END FIND US  -->
+
   <footer>
   <!-- FOOTER -->
     <div class="container">
@@ -152,14 +224,14 @@
               </div>
             </div>
             <div class="col-2">
-              <div class="categories ">
+              <div class="categories me-5">
                 <h4 class="mb-4">Categories</h4>
                 <p>Drinks</p>
                 <p>Food</p>
               </div>
             </div>
             <div class="col-2">
-              <div class="archive me-3">
+              <div class="archive me-5">
                 <h4 class="mb-4">Archives</h4>
                 <p>March 2021</p>
               </div>
@@ -202,7 +274,7 @@
     <div class="container">
       <div class="text d-flex">
         <p class="text-white">© 2023 Diner. All Rights Reserved | WordPress Theme by</p>
-        <a href="#">W3Layouts</a>
+        <a href="#">NHOM 3 DINNER</a>
       </div>
     </div>
   </div>
@@ -218,8 +290,8 @@
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>
 
-   <!-- file JS -->
-   <script src="./js/dark_theme.js"></script>
+  <!-- file JS -->
+  <script src="./js/dark_theme.js"></script>
 
 </body>
 
