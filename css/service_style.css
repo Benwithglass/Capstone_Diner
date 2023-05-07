@@ -201,6 +201,7 @@ header ol li a {
 .food {
     padding: 85px 0;
     position: relative;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .logo {
@@ -236,12 +237,20 @@ header ol li a {
 
 .food__name p {
     font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.food__name p:hover {
+    color: #FF6600;
 }
 
 .row {
     gap: 29px;
     padding: 6px 27px 28px 10px;
 }
+
 
 
 /* END FOOD */
@@ -291,9 +300,6 @@ header ol li a {
 .contact .boxes .right button:hover {
     opacity: 0.9;
 }
-
-
-
 /* END CONTACT */
 
 /* MENU */

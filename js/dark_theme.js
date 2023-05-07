@@ -1,14 +1,3 @@
-// document.getElementById("switchButton").onclick = function () {
-//     document.getElementById("myBody").classList.toggle("dark");
-// }
-
-// function myFunction() {
-//     var element = document.body;
-//     element.classList.toggle("dark");
-// }
-
-// toggle Dark mode thì page tự động reload dẫn đến page tự chuyển lại thành light mode nên phải thử cách dưới này...
-
 function darkMode () {
     var setTheme = document.body;
     

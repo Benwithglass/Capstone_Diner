@@ -1,0 +1,833 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Home</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <!-- Font Awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Google font - Quicksand -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Google font - Pacifico -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- slick carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- File Css -->
+  <link rel="stylesheet" href="./css/home.css">
+
+
+</head>
+
+<body id="mybody">
+  <!-- HEADER -->
+  <header>
+    <div class="container" id="myHeader">
+        <div class="hny_header HeaderLogoEd">
+            <div class="hnyits_logo">
+                <h1>
+                    <a href="">Diner</a>
+                </h1>
+            </div>
+            <div class="menu-right-content">
+                <!-- search right-->
+                <div class="search-bar HeaderSearch">
+                    <form action="" method="GET" class="search position-relative">
+                        <input type="search" class="search__input" name="s" placeholder="search here.." onload="equalWidth()" required>
+                        <span>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                    </form>
+                </div>
+                <button class="btn" id="switchButton" title="Click to switch theme" onclick="darkMode()">
+                  <i class="fa-regular fa-moon btn fs-4 me-2 text-white" id="moon"></i>
+                  <i class="fa-regular fa-sun btn fs-4 me-2 " id="sun"></i>
+                </button>                    
+            <!-- MENU POP UP -->
+            
+            <!-- Button trigger modal -->
+            <button type="button" class="border-0" data-bs-toggle="modal" data-bs-target="#exampleModal" id="menu">
+              <i class="fa-solid fa-bars btn fs-4 text-white"></i>
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class=" modal-content text-center">
+                  <!-- <div class="modal-header"> -->
+                    <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                  <!-- </div> -->
+                  <!-- <div class="modal-body text-center"> -->
+                    <a href="http://127.0.0.1:5502/home.html">Home</a> <br>
+                    <a href="">About</a> <br>
+                    <a href="http://127.0.0.1:5500/services.html?#myHeader">Services</a> <br>
+                    <a href="">Blog Posts</a> <br>
+                    <a href="http://127.0.0.1:5500/404_page.html?#myHeader">404 page</a> <br>
+                    <a href="http://127.0.0.1:5500/elements.html?#myHeader">Elements</a> <br>
+                    <a href="">Contact</a> <br>
+                    <a href="">Landing page</a>
+                  <!-- </div> -->
+                  <!-- <div class="modal-footer"> -->
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                  <!-- </div> -->
+                </div>
+              </div>
+            </div>
+                        <!-- END MENU POP UP -->
+            </div>
+        </div>
+    </div>
+
+    <!-- banner  -->
+    <section class="banner">
+      <div class="banner-content">
+        <div class="container HomePageHeroHeader">
+          <div class="banner-info">
+            <h3 class="mb-5">The Only Thing We <br> Love More Than Food <br> Is You!</h3>
+            <p class="pr-lg-5 mt-md-4 mt-3">
+              Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.Ea ipsum sed consequuntur illum facere.
+            </p>
+            <a class="btn btn-white mt-sm-5 mt-4 mr-2" href="#url">Read More &nbsp;
+              <span class="">
+                <i class="fa-solid fa-chevron-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="clear"></div>
+  </header>
+  
+  <!-- content about us  -->
+  <div class="offer">
+    <div class="container">
+      <div class="content d-flex">
+        <div class="left col-lg-5 content-1-left">
+          <h6 class="fs-4">About us</h6>
+          <h3 class="fw-bolder">We found our creative space that is open for you</h3>
+        </div>
+        <div class="right col-7 content-1-right pl-lg-5 mt-lg-0 mt-3">
+          <p>
+            Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet. Lorem ipsum init dolor sit, amet elit. Dolor ipsum non velit, culpa!Lorem ipsum init dolor sit.
+            <br> 
+            <br>
+            Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+  <!-- more than 3000 -->
+  <section class="more">
+    <div class="agent-block" id="why">
+      <div class="container-fluid px-lg-0">
+        <div class="row align-items-center no-gutters">
+          <div class="col-lg-6 px-lg-0 pt-lg-0 pt-5">
+            <div class="agent-block-image">
+            </div>
+          </div>
+          <div class="col-lg-6 px-lg-4 py-lg-3 py-4 HomePageFWP">
+            <div class="agent-block-image-inf p-md-5 p-3">
+              <h6 class="title-sub two">
+                More than 3000 Restaurants
+              </h6>
+              <h3 class="title two">
+                Book a table easly at the best price
+              </h3>
+              <p class="my-3">
+                Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales quis. Integer sit amet mattis quam.Vivamus a ligula quam tesque et libero ut justo ultrices in.
+              </p>
+              <div class="subscribe-cat mt-5">
+                <div class="subscribe-cat-gd">
+                  <div class="icon mb-4">
+                    <span>
+                      <i class="fa-solid fa-thumbs-up"></i>
+                    </span>
+                  </div>
+                  <a href="#" class="subscribe-cat-link text-white">
+                    Best Deals
+                  </a>
+                  <p class="mt-2">Lorem ipsum viverra feugiat. Pellen tesque libero justo.
+                  </p>
+                </div>
+                <div class="subscribe-cat-gd">
+                  <div class="icon mb-4">
+                    <span>
+                      <i class="fa-solid fa-utensils"></i>
+                    </span>
+                  </div>
+                  <a href="#" class="subscribe-cat-link text-white">Best Food</a>
+                  <p class="mt-2">Lorem ipsum viverra feugiat. Pellen tesque libero justo.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </section>
+
+  <!-- POPULAR -->
+  <div class="popular">
+    <div class="title container mb-5">
+      <h6>What's New</h6>
+      <h3>Popular Categories</h3>
+    </div>
+    <div class="container mb-5">
+      <div class="row text-start">
+        <!-- 1 -->
+        <div class="col">
+          <img src="./img/g1.jpg" alt="">
+          <div class="text">
+            <h6>Vegetarian</h6>
+            <span>$350</span>
+          </div>
+        </div>
+        <!-- 2  -->
+        <div class="col">
+          <img src="./img/g2.jpg" alt="">
+          <div class="text">
+            <h6>Drinks</h6>
+            <span>$550</span>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="col">
+          <img src="./img/g3.jpg" alt="">
+          <div class="text">
+            <h6>Lunch</h6>
+            <span>$650</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row text-start">
+        <div class="col">
+          <img src="./img/g4.jpg" alt="">
+          <div class="text">
+            <h6>Bakery</h6>
+            <span>$550</span>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="col">
+          <img src="./img/g5.jpg" alt="">
+          <div class="text">
+            <h6>Desserts</h6>
+            <span>$750</span>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="col">
+          <img src="./img/g6.jpg" alt="">
+          <div class="text">
+            <h6>Pizza</h6>
+            <span>$850</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <!-- END POPULAR  -->
+
+  <!-- FOOD -->
+  <div class="food">
+    <div class="container">
+      <div class="boxes">
+        <div class="content">
+          <div class="container overflow-hidden">
+            <!-- row 1 -->
+            <div class="row">
+              <!-- item 1 -->
+              <div class="col border border-dark-subtle p-4 rounded">
+                <div class="title d-flex">
+                  <div class="logo rounded me-4 mb-4 bg-light">
+                    <i class="fa-solid fa-users"></i>
+                  </div>
+                  <div class="food__name">
+                    <span class="" >01</span>
+                    <p class="">Soup</p>
+                  </div>
+                </div>
+                <div class="text">
+                  <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
+                </div> 
+              </div>
+              <!-- item 2 -->
+              <div class="col border border-dark-subtle p-4 rounded">
+                <div class="title d-flex">
+                  <div class="logo rounded me-4 mb-4 bg-light">
+                    <i class="fa-solid fa-shield-halved"></i>
+                  </div>
+                  <div class="food__name">
+                    <span class="" >02</span>
+                    <p class="">Drinks</p>
+                  </div>
+                </div>
+                <div class="text">
+                  <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
+                </div> 
+              </div>
+              <!-- item 3 -->
+              <div class="col border border-dark-subtle p-4 rounded">
+                <div class="title d-flex">
+                  <div class="logo rounded me-4 mb-4 bg-light">
+                    <i class="fa-solid fa-temperature-high"></i>
+                  </div>
+                  <div class="food__name">
+                    <span class="" >03</span>
+                    <p class="">Pizza</p>
+                  </div>
+                </div>
+                <div class="text">
+                  <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
+                </div> 
+              </div>
+            </div>
+            <!-- row 2 -->
+            <div class="row">
+              <!-- item 1 -->
+              <div class="col border border-dark-subtle p-4 rounded">
+                <div class="title d-flex">
+                  <div class="logo rounded me-4 mb-4 bg-light">
+                    <i class="fa-solid fa-hands-asl-interpreting"></i>
+                  </div>
+                  <div class="food__name">
+                    <span class="" >04</span>
+                    <p class="">Breakfast</p>
+                  </div>
+                </div>
+                <div class="text">
+                  <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
+                </div> 
+              </div>
+              <!-- item 2 -->
+              <div class="col border border-dark-subtle p-4 rounded">
+                <div class="title d-flex">
+                  <div class="logo rounded me-4 mb-4 bg-light">
+                    <i class="fa-solid fa-paintbrush"></i>
+                  </div>
+                  <div class="food__name">
+                    <span class="" >05</span>
+                    <p class="">Lunch</p>
+                  </div>
+                </div>
+                <div class="text">
+                  <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
+                </div> 
+              </div>
+              <!-- item 3 -->
+              <div class="col border border-dark-subtle p-4 rounded">
+                <div class="title d-flex">
+                  <div class="logo rounded me-4 mb-4 bg-light">
+                    <i class="fa-solid fa-eraser"></i>
+                  </div>
+                  <div class="food__name">
+                    <span class="" >06</span>
+                    <p class="">Dinner</p>
+                  </div>
+                </div>
+                <div class="text">
+                  <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END FOOD -->
+
+<!-- CONTACT -->
+  <div class="contact text-center">
+    <div class="overplay"></div>
+    <div class="container position-relative">
+        <h1 class="text-white">Deliciousness jumping into 
+          <br> 
+          the mouth.
+        </h1>
+        <div class="boxes d-flex justify-content-center mt-5">
+          <a href="#url" class="left">
+            <button type="button" class="btn btn-outline-light btn-lg me-4">
+              Read More <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </a>
+          <a href="#url" class="right">
+            <button type="button" class="btn btn-secondary btn-lg ">
+              Contact Us <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </a>
+        </div>
+    </div>
+  </div>
+<!-- END CONTACT -->
+
+<!-- NUMBER JUMPING -->
+  <div class="number">
+    <div class="container">
+      <div class="number__bg">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col rounded-2">
+              <div class="item d-flex flex-column justify-content-center align-items-center">
+                <div class="icon mb-3">
+                  <div class="icon__bg d-flex justify-content-center align-items-center">
+                    <i class="fa-solid fa-building"></i>
+                  </div>
+                </div>
+                <div class="so">
+                  <h1 class="counter">15,100</h1>
+                </div>
+                <div class="text">
+                  Branches
+                </div>
+              </div>
+            </div>
+            <div class="col rounded-2">
+              <div class="item d-flex flex-column justify-content-center align-items-center">
+                <div class="icon mb-3">
+                  <div class="icon__bg d-flex justify-content-center align-items-center">
+                    <i class="fa-solid fa-utensils"></i>
+                  </div>
+                </div>
+                <div class="so">
+                  <h1 class="counter">19,256</h1>
+                </div>
+                <div class="text">
+                  Food Items
+                </div>
+              </div>
+            </div>
+            <div class="col rounded-2">
+              <div class="item d-flex flex-column justify-content-center align-items-center">
+                <div class="icon mb-3">
+                  <div class="icon__bg d-flex justify-content-center align-items-center">
+                    <i class="fa-solid fa-users"></i>
+                  </div>
+                </div>
+                <div class="so">
+                  <h1 class="counter">12,100</h1>
+                </div>
+                <div class="text">
+                  Chefs
+                </div>
+              </div>
+            </div>
+            <div class="col rounded-2">
+              <div class="item d-flex flex-column justify-content-center align-items-center">
+                <div class="icon mb-3">
+                  <div class="icon__bg d-flex justify-content-center align-items-center">
+                    <i class="fa-solid fa-face-smile"></i>
+                  </div>
+                </div>
+                <div class="so">
+                  <h1 class="counter">2,560</h1>
+                </div>
+                <div class="text">
+                  Happy Customers
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END NUMBER JUMPING -->
+
+<!-- MOVIE -->
+  <div class="movie">
+    <div class="container">
+      <div class="movie__bg d-flex justify-content-center align-items-center">
+        <div class="overlay"></div>
+        <!-- sd nút play dưới dạng modal (live demo vertically center) -->
+        <!-- sau nút play là hình background -->
+        <!-- khi bấm vào nút play thì video sẽ pop up ở giữa trang web, background xung quanh video sẽ bị mờ -->
+        <!-- Button trigger modal -->
+        <div class="button__bg">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="fa-solid fa-heart"></i>          
+          </button>
+        </div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class=" modal-content d-flex justify-content-center align-items-center">
+      <!-- <div class="modal-header"> -->
+        <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
+        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+      <!-- </div> -->
+      <!-- <div class="modal-body text-center"> -->
+        <iframe title="vimeo-player" src="https://player.vimeo.com/video/305185528?h=195bf3cba0" width="854" height="480" frameborder="0"    allowfullscreen></iframe>
+      <!-- </div> -->
+      <!-- <div class="modal-footer"> -->
+        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      <!-- </div> -->
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+<!-- END MOVIE -->
+
+<!-- BLOG POST -->
+  <div class="blog">
+    <div class="container">
+      <div class="blog__bg">
+        <div class="title text-center mb-5">
+          <h6>Latest Posts</h6>
+          <h3>Blog Posts</h3>
+        </div>
+        <div class="item">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="col__bg mb-4">
+                  <img src="./img/g1.jpg" alt="">
+                  <div class="col__name">
+                    <a href="#">Drinks</a>
+                  </div>
+                </div>
+                <div class="comment">
+                  <a href="#">
+                    <h4>Hello world!</h4>
+                  </a>
+                </div>
+                <div class="address d-flex justify-content-between align-items-center">
+                  <div class="left">
+                    <a href="#">
+                      <img src="https://secure.gravatar.com/avatar/328cc1f23e4a3b73aa60ee6ced1897a1?s=40&d=mm&r=g" alt="">
+                    </a>
+                    <a href="#">W3Layouts</a>
+                  </div>
+                  <div class="right">
+                    <a href="#">
+                      Read More <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="col__bg mb-4">
+                  <img src="https://wp.w3layouts.com/diner/wp-content/uploads/sites/25/2021/03/g7.jpg" alt="">
+                  <div class="col__name">
+                    <a href="#">Drinks</a>
+                  </div>
+                </div>
+                <div class="comment">
+                  <a href="#">
+                    <h4>The Best Cookie Recipes To Bake This Weekend</h4>
+                  </a>
+                </div>
+                <div class="address d-flex justify-content-between align-items-center">
+                  <div class="left">
+                    <a href="#">
+                      <img src="./img/g7.jpg" alt="">
+                    </a>
+                    <a href="#">W3Layouts</a>
+                  </div>
+                  <div class="right">
+                    <a href="#">
+                      Read More <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="col__bg mb-4">
+                  <img src="./img/g5.jpg" alt="">
+                  <div class="col__name">
+                    <a href="#">Food</a>
+                  </div>
+                </div>
+                <div class="comment">
+                  <a href="#">
+                    <h4>The Best Cookie Recipes To Bake This Weekend</h4>
+                  </a>
+                </div>
+                <div class="address d-flex justify-content-between align-items-center">
+                  <div class="left">
+                    <a href="#">
+                      <img src="https://secure.gravatar.com/avatar/328cc1f23e4a3b73aa60ee6ced1897a1?s=40&d=mm&r=g" alt="">
+                    </a>
+                    <a href="#">W3Layouts</a>
+                  </div>
+                  <div class="right">
+                    <a href="#">
+                      Read More <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END BLOG POST -->
+
+<!-- TESTIMONIALS -->
+  <div class="testical">
+    <div class="container">
+      <div class="testical__bg">
+        <div class="title text-center mb-5">
+          <h6>Testimonials</h6>
+          <h3>What People Say</h3>
+        </div>
+        <!-- Carousel -->
+        <div class="review text-center">
+          <div class="review__people">
+            <div class="people d-flex justify-content-center align-items-center">
+              <div class="people__bg">
+                <div class="hinh d-flex justify-content-center align-items-center mb-4">
+                  <img src="./img/team1.jpg" alt="">
+                </div>
+                <div class="comment">
+                  <i class="fa-solid fa-quote-left"></i>
+                  <h4 class="mb-4">"OMG! I cannot believe. It's Awesome"</h4>
+                  <p class="mb-4">
+                    My new site is so much faster and easier to work with than my old site. They are <br>
+                    here tohelp the customers to get their success. Nemo sit eos, quod minus eius illo <br>
+                    labore. Pellen tesque libero ut justo, ultrices in ligula.
+                  </p>
+                  <h5>Johnson william</h5>
+                  <p>Customer</p>
+                </div>
+              </div>
+            </div>
+            <div class="people d-flex justify-content-center align-items-center">
+              <div class="people__bg">
+                <div class="hinh d-flex justify-content-center align-items-center mb-4">
+                  <img src="./img/team2.jpg" alt="">
+                </div>
+                <div class="comment">
+                  <i class="fa-solid fa-quote-left"></i>
+                  <h4 class="mb-4">"Simply the best. Better than all the rest."</h4>
+                  <p class="mb-4">
+                    My new site is so much faster and easier to work with than my old site. They are <br>
+                    here tohelp the customers to get their success. Nemo sit eos, quod minus eius illo <br>
+                    labore. Pellen tesque libero ut justo, ultrices in ligula.
+                  </p>
+                  <h5>Alexander Sakura</h5>
+                  <p>Customer</p>
+                </div>
+              </div>
+            </div>
+            <div class="people d-flex justify-content-center align-items-center">
+              <div class="people__bg">
+                <div class="hinh d-flex justify-content-center align-items-center mb-4">
+                  <img src="./img/team3.jpg" alt="">
+                </div>
+                <div class="comment">
+                  <i class="fa-solid fa-quote-left"></i>
+                  <h4 class="mb-4">"OMG! I cannot believe. It's Awesome"</h4>
+                  <p class="mb-4">
+                    My new site is so much faster and easier to work with than my old site. They are <br>
+                    here tohelp the customers to get their success. Nemo sit eos, quod minus eius illo <br>
+                    labore. Pellen tesque libero ut justo, ultrices in ligula.
+                  </p>
+                  <h5>John Wilson</h5>
+                  <p>Customer</p>
+                </div>
+              </div>
+            </div>
+            <div class="people d-flex justify-content-center align-items-center">
+              <div class="people__bg">
+                <div class="hinh d-flex justify-content-center align-items-center mb-4">
+                  <img src="./img/team1.jpg" alt="">
+                </div>
+                <div class="comment">
+                  <i class="fa-solid fa-quote-left"></i>
+                  <h4 class="mb-4">"OMG! I cannot believe. It's Awesome"</h4>
+                  <p class="mb-4">
+                    My new site is so much faster and easier to work with than my old site. They are <br>
+                    here tohelp the customers to get their success. Nemo sit eos, quod minus eius illo <br>
+                    labore. Pellen tesque libero ut justo, ultrices in ligula.
+                  </p>
+                  <h5>Julia Sakura</h5>
+                  <p>Customer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+<!-- END TESTIMONIALS -->
+
+<!-- FOOTER -->
+<footer>
+  <!-- FOOTER -->
+    <div class="container">
+      <div class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <div class="diner me-3">
+                <div class="text">
+                  <a href="#">
+                    <h4 class="mb-4">Diner</h4>
+                  </a>
+                  <p class="text-white">
+                    Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet Semper at elit.
+                  </p>
+                </div>
+                <div class="icons d-flex">
+                  <!-- icon 1 -->
+                  <div class="bg  border-dark-subtle p-4 rounded-3 me-2">
+                    <a href="https://www.facebook.com/w3layouts/">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                  </div>
+                  <!-- icon 2 -->
+                  <div class="bg border-dark-subtle p-4 rounded-3 me-2">
+                    <a href="https://twitter.com/W3layouts">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                  </div>
+                  <!-- icon 3 -->
+                  <div class="bg border-dark-subtle p-4 rounded-3 me-2">
+                    <a href="https://www.instagram.com/w3layouts_/">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </div>
+                  <!-- icon 4 -->
+                  <div class="bg border-dark-subtle p-4 rounded-3">
+                    <a href="https://www.linkedin.com/company/w3layouts/?originalSubdomain=in">
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="categories ">
+                <h4 class="mb-4">Categories</h4>
+                <p>Drinks</p>
+                <p>Food</p>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="archive me-3">
+                <h4 class="mb-4">Archives</h4>
+                <p>March 2021</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="subcribe">
+                <h4 class="mb-4">Subscribe to our Newsletter</h4>
+                <p class="mb-4">Enter your email and receive the latest news, 
+                  <br> 
+                  updates and special offers from us.
+                </p>
+                <div class="mb-3">
+                  <!-- <label for="" class="form-label">Email</label> -->
+                  <input type="email" class="form-control" name="" id="Email" aria-describedby="emailHelpId" placeholder="Your Email Address">
+                  <!-- <small id="emailHelpId" class="form-text text-muted">Help text</small> -->
+                </div>
+                <div class="button">
+                  <button type="button" class="btn btn-secondary btn-lg">Subcribe Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- END FOOTER -->
+
+  <!-- BACK TO TOP -->
+  <div class="gohome d-flex justify-content-end">
+      <div class="backtotop d-flex justify-content-center align-items-center rounded-5">
+        <a href="#myHeader">
+          <i class="fa-solid fa-angle-up"></i>
+        </a>
+      </div>
+  </div>
+  <!-- END BACK TO TOP -->
+
+  <!-- COPYRIGHT -->
+  <div class="copyright">
+    <div class="container">
+      <div class="text d-flex">
+        <p class="text-white">© 2023 Diner. All Rights Reserved | WordPress Theme by</p>
+        <a href="#">W3Layouts</a>
+      </div>
+    </div>
+  </div>
+  <!-- END COPYRIGHT -->
+  </footer>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+
+  <!-- slick carousel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js" integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $('.review__people').slick({
+        infinite: true,
+        // muon the hien bao nhieu phan tu 
+        slidesToShow: 1,
+        // muon moi lan click chuyen bao nhieu phan tu
+        slidesToScroll: 1,
+        // dot - goi ra cac cham giup di chuyen toi slide moi
+        dots: true,
+        // arrow - tao ra mui ten 2 ben
+        arrows: false,
+        // autoplay - giup carousel tu dong chay
+        autoplay: true,
+        
+    });
+</script>
+
+ <!-- count up js -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="./js/Counting-Up-To-Numerical-Values-On-Scroll-jQuery-Countup-js/jquery.countup.js"></script>
+ <script>$('.counter').countUp({
+     'time': 2000,
+     // 'delay': 10,
+ });</script>
+
+  <!-- File JS -->
+  <script src="./js/dark_theme.js"></script>
+
+</body>
+
+</html>
