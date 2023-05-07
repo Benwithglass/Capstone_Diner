@@ -1,0 +1,436 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Pacifico', cursive;
+    font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+    background-image:linear-gradient(to right, rgb(236 98 6 / 98%), rgb(5 3 0 / 83%)), url(./../img/banner2.jpg);
+    min-height: 350px;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 40px 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header form .form-control{
+    position: relative;
+    padding: 5px 50px 5px 20px;
+}
+
+/* thay doi vi tri kinh lup */
+header form i:nth-child(2) {
+    position: absolute;
+    right: 113px;
+    top: 25px;
+}
+
+header form i:last-child {
+    position: absolute;
+    top: 14px;
+    right: -17px;
+}
+
+/* Tương lai tươi sáng */
+#myBody {
+    background-color: white;
+}
+
+#switchButton #sun {
+    display: none;
+}
+#switchButton #moon {
+    display: block;
+}
+
+/* Tương lai u tối */
+.dark#myBody {
+    background-color: #404040;
+}
+
+.dark #switchButton #sun {
+    display: block;
+    color: white;
+    position: static;
+}
+  
+.dark #switchButton #moon {
+    display: none;
+}
+
+.dark .navbar input {
+    border: 1px solid transparent;
+}
+
+.dark .offer {
+    background-color: #404040;
+    color: white !important;
+}
+
+.dark input {
+    background-color: #404040;
+}
+
+.dark .food {
+    background-color: #404040;
+    color: white !important;
+}
+
+.dark .menu {
+    background-color: #404040;
+    color: white !important;
+}
+
+.dark .icons .bg{
+    background-color: #404040;
+}
+
+.dark .subcribe input {
+    border: 1px solid transparent;
+}
+
+header nav a {
+    text-decoration: none;
+    /* color: black; */
+    font-weight: 700 !important;
+    
+}
+
+header .direction {
+    padding: 80px 0 0 0;
+    position: relative;
+    width: 100%;
+}
+
+header ol li a {
+    color: orange;
+}
+/* END HEADER */
+
+/* OFFER */
+.offer {
+    padding: 85px 0;
+}
+
+.offer .content .left {
+    width: 40%;
+    /* padding: 0 70px 0 0; */
+}
+
+.offer .content .left h3 {
+    font-family: 'Pacifico', cursive;
+    color: #FF6600;
+}
+
+.offer .content .left h1 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.offer .content .right {
+    width: 60%;
+    padding: 0 0 0 119px;
+}
+/* END OFFER */
+
+/* FOOD */
+.food {
+    padding: 85px 0;
+    position: relative;
+}
+
+.logo {
+    padding: 20px 19px;
+    transition: all 0.5s;
+}
+
+.logo i {
+    font-size: 35px;
+    color: orangered;
+    transition: all 0.5s;
+}
+
+.col:hover .logo i{
+    color: white;
+}
+
+.col:hover .logo {
+    background-color: orangered !important;
+}
+
+.col {
+    transition: all 0.5s;
+}
+
+.col:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 15px 15px 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+}
+.food__name span {
+    font-size: 18px;
+}
+
+.food__name p {
+    font-size: 24px;
+}
+
+.row {
+    gap: 29px;
+    padding: 6px 27px 28px 10px;
+}
+
+
+/* END FOOD */
+
+/* CONTACT */
+.contact {
+    padding: 80px 0 130px 0;
+    min-height: 100%;
+    background-image: url(./../img/banner2.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+}
+
+.contact .overplay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(7,10,12,.50);
+}
+
+.contact h1 {
+    font-weight: bold;
+}
+
+.contact .boxes button {
+    font-size: 15px;
+    padding: 12px 29px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.contact .boxes button:nth-child(1):hover {
+    color: orangered;
+}
+
+.contact .boxes button:nth-child(2) {
+    background-color: orangered;
+    border: 1px solid transparent;
+}
+
+.contact .boxes button:nth-child(2):hover {
+    opacity: 0.9;
+}
+/* END CONTACT */
+
+/* MENU */
+.menu {
+    padding: 85px 0;
+}
+
+.menu .title h3 {
+    font-family: 'Pacifico', cursive;
+    color: #FF6600;
+}
+
+.menu .title h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
+}
+
+.menu .dishes {
+    padding-top: 50px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.menu .dishes .left {
+    width: 50%;
+}
+
+.menu .dishes .left .item {
+    padding: "";
+}
+
+.menu .dishes .left .item .price {
+    border-bottom: 2px dotted black;
+}
+
+.menu .dishes .left .item .price h6:nth-child(2) {
+    color: #FF6600;
+}
+
+.menu .dishes .right {
+    width: 50%;
+}
+
+.menu .dishes .right .item .price {
+    border-bottom: 2px dotted black;
+}
+
+.menu .dishes .right .item .price h6:nth-child(2) {
+    color: #FF6600;
+}
+/* END MENU */
+
+/* FOOTER */
+footer {
+    background-color: black;
+    padding: 85px 0 0 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+footer .content {
+    padding: 0 0 85px 0;
+}
+
+footer .diner {
+    width: 30%;
+    padding: 0 35px 0 0;
+}
+
+footer .diner a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+    font-size: 30px;
+}
+
+footer .diner a:hover {
+    color: #FF6600;
+}
+
+footer .bg {
+    width: 36px;
+    height: 36px;
+    position: relative;
+    transition: all 0.5s;
+    background-color: white;
+}
+
+footer .bg i {
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    font-size: 17px;
+    color: #FF6600;
+}
+
+footer .bg:hover {
+    background-color: #FF6600;
+}
+
+footer .bg:hover i {
+    color: white;
+}
+
+footer .categories {
+    color: white;
+}
+
+footer .categories h1 {
+    font-size: 32px;
+}
+
+footer .categories p {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+footer .categories p:hover {
+    color: #FF6600;
+}
+
+footer .archive {
+    color: white;
+}
+
+footer .archive h1 {
+    font-size: 32px;
+}
+
+footer .archive p {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+footer .archive p:hover {
+    color: #FF6600;
+}
+
+footer .subcribe {
+    color: white;
+}
+
+footer .subcribe h1 {
+    font-size: 32px;
+}
+
+footer #Email {
+    padding: 10px 40px
+}
+
+footer .subcribe .button button {
+    background-color: #FF6600;
+    border: 1px solid transparent;
+    transition: all 0.5s;
+    padding: 10px 133px;
+}
+
+footer .subcribe .button:hover{
+    opacity: 0.9;
+}
+/* END FOOTER */
+
+/* BACK TO TOP */
+.backtotop {
+    width: 50px;
+    height: 50px;
+    background-color: #FF6600;
+    position: sticky;
+    right: 23px;
+    bottom: 50px;
+    transition: all 0.5s;
+    /* opacity: 1; */
+    /* pointer-events: none; */
+}
+
+/* .backtotop.active {
+    bottom: 32px;
+    opacity: 1;
+    pointer-events: auto;
+} */
+
+.backtotop a {
+    color: white;
+}
+/* END BACK TO TOP */
+
+/* COPYRIGHT */
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.103);
+    padding: 10px 0;
+}
+
+.copyright .text {
+    gap: 5px;
+}
+
+.copyright .text a {
+    color: #FF6600;
+    text-decoration: none;
+}
+
+.copyright .text a:hover {
+    color: white;
+}
+/* END COPYRIGHT */

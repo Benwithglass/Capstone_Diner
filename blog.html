@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Blog-Posts</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!-- Font Awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Google font - Pacifico -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Google font - Quicksand -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- File Css -->
+  <link rel="stylesheet" href="./css/blog.css">
+</head>
+
+<body id="myBody">
+  <header id="myHeader">
+    <div class="container">
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a href="https://wp.w3layouts.com/diner/" class="fs-2 text-white" id="Home">Diner</a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search here..." aria-label="Search">
+            <i class="fa-solid fa-magnifying-glass fs-5"></i>
+            <button class="btn" id="switchButton" title="Click to switch theme" onclick="darkMode()">
+              <i class="fa-regular fa-moon btn fs-4 me-2 text-white" id="moon"></i>
+              <i class="fa-regular fa-sun btn fs-4 me-2 " id="sun"></i>
+            </button>
+            <!-- MENU POP UP -->
+
+            <!-- Button trigger modal -->
+            <button type="button" class="border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <i class="fa-solid fa-bars btn fs-4 text-white"></i>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class=" modal-content text-center">
+                  <!-- <div class="modal-header"> -->
+                  <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
+                  <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                  <!-- </div> -->
+                  <!-- <div class="modal-body text-center"> -->
+                  <a href="">Home</a> <br>
+                  <a href="">About</a> <br>
+                  <a href="http://127.0.0.1:5500/services.html?#myHeader">Services</a> <br>
+                  <a href="">Blog Posts</a> <br>
+                  <a href="http://127.0.0.1:5500/404_page.html?#myHeader">404 page</a> <br>
+                  <a href="http://127.0.0.1:5500/elements.html?#myHeader">Elements</a> <br>
+                  <a href="">Contact</a> <br>
+                  <a href="">Landing page</a>
+                  <!-- </div> -->
+                  <!-- <div class="modal-footer"> -->
+                  <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                  <!-- </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- END MENU POP UP -->
+          </form>
+        </div>
+      </nav>
+      <div class="direction d-flex justify-content-center fs-5 fw-semibold">
+        <nav
+          style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;) url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+          aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item "><a href="https://wp.w3layouts.com/diner/">Home</a></li>
+          </ol>
+        </nav>
+      </div>
+  </header>
+  <main>
+    <section class="blogposts py-5" id="blogpage">
+      <div class="container py-md-5 py-2">
+        <div class="title text-center">
+          <h4>
+            Latest Posts</h4>
+          <h1 class="mb-5">
+            Blog Posts </h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 pe-lg-4">
+            <div class="row">
+              <!-- </article>#post-1 -->
+              <div class="col-md-6 item mb-4">
+                <article id="post-1" class="post-1 post__item">
+                  <div class="card">
+                    <div class="card-header p-0 position-relative">
+                      <a href="https://wp.w3layouts.com/diner/2021/03/01/hello-world/">
+                      </a>
+                      <a class="post-thumbnail" href="https://wp.w3layouts.com/diner/2021/03/01/hello-world/"
+                        aria-hidden="true" tabindex="-1">
+                        <img src="./img/blog_g1.jpg" class="attachment-post-thumbnail " alt="Hello world!"
+                          decoding="async">
+                      </a>
+                      <div class="post-pos">
+                        <span><a href="https://wp.w3layouts.com/diner/category/drinks/"
+                            rel="category tag">Drinks</a></span>
+                        <span class="meta-info meta-info-custom">
+                          <i class="fa-regular fa-clock"></i>
+                          7:07 am </span>
+                      </div>
+
+                    </div>
+                    <div class="card-body p-0 blog-details">
+                      <a href="https://wp.w3layouts.com/diner/2021/03/01/hello-world/" class="blog-desc"></a><a
+                        href="https://wp.w3layouts.com/diner/2021/03/01/hello-world/" rel="bookmark"
+                        class="blog-desc">Hello world!</a>
+                      <p class="mb-0"> </p>
+
+                      <div class="p-footer mt-3">
+
+                        <div class="p-meta-info">
+
+                          <a href="https://wp.w3layouts.com/diner/author/w3layouts/" class="post-img-anchor">
+                            <img src="./img/logow3l.jpeg" alt="W3Layouts" class="post-img radius-img img-fluid">
+                          </a>
+                          <a class="url fn n" href="https://wp.w3layouts.com/diner/author/w3layouts/">W3Layouts</a>
+                        </div>
+
+                        <a href="https://wp.w3layouts.com/diner/2021/03/01/hello-world/" class="read">Read More <i
+                            class="fa-solid fa-chevron-right"></i></a>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </article>
+              </div>
+              <!-- </article>#post-2 -->
+              <div class="col-md-6 item mb-4">
+                <article id="post-1" class="post-1 post__item">
+                  <div class="card">
+                    <div class="card-header p-0 position-relative">
+                      <a href="https://wp.w3layouts.com/diner/2021/03/01/hello-world/">
+                      </a>
+                      <a class="post-thumbnail" href="https://wp.w3layouts.com/diner/2021/03/01/hello-world/"
+                        aria-hidden="true" tabindex="-1">
+                        <img src="./img/blog_g1.jpg" class="attachment-post-thumbnail " alt="Hello world!"
+                          decoding="async">
+                      </a>
+                      <div class="post-pos">
+                        <span><a href="https://wp.w3layouts.com/diner/category/drinks/"
+                            rel="category tag">Drinks</a></span>
+                        <span class="meta-info meta-info-custom">
+                          <i class="fa-regular fa-clock"></i>
+                          7:07 am </span>
+                      </div>
+
+                    </div>
+                    <div class="card-body p-0 blog-details">
+                      <a href="https://wp.w3layouts.com/diner/2021/03/01/hello-world/" class="blog-desc"></a><a
+                        href="https://wp.w3layouts.com/diner/2021/03/01/hello-world/" rel="bookmark"
+                        class="blog-desc">Hello world!</a>
+                      <p class="mb-0"> </p>
+
+                      <div class="p-footer mt-3">
+
+                        <div class="p-meta-info">
+
+                          <a href="https://wp.w3layouts.com/diner/author/w3layouts/" class="post-img-anchor">
+                            <img src="./img/logow3l.jpeg" alt="W3Layouts" class="post-img radius-img img-fluid">
+                          </a>
+                          <a class="url fn n" href="https://wp.w3layouts.com/diner/author/w3layouts/">W3Layouts</a>
+                        </div>
+
+                        <a href="https://wp.w3layouts.com/diner/2021/03/01/hello-world/" class="read">Read More <i
+                            class="fa-solid fa-chevron-right"></i></a>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </article>
+              </div>
+              <!-- </article>#post-3 -->
+              <div class="col-md-6 item mb-4">
+                <article id="post-1" class="post-1 post__item">
+                  <div class="card">
+                    <div class="card-header p-0 position-relative">
+                      <a href="https://wp.w3layouts.com/diner/2021/03/01/hello-world/">
+                      </a>
+                      <a class="post-thumbnail" href="https://wp.w3layouts.com/diner/2021/03/01/hello-world/"
+                        aria-hidden="true" tabindex="-1">
+                        <img src="./img/blog_g1.jpg" class="attachment-post-thumbnail " alt="Hello world!"
+                          decoding="async">
+                      </a>
+                      <div class="post-pos">
+                        <span><a href="https://wp.w3layouts.com/diner/category/drinks/"
+                            rel="category tag">Drinks</a></span>
+                        <span class="meta-info meta-info-custom">
+                          <i class="fa-regular fa-clock"></i>
+                          7:07 am </span>
+                      </div>
+
+                    </div>
+                    <div class="card-body p-0 blog-details">
+                      <a href="https://wp.w3layouts.com/diner/2021/03/01/hello-world/" class="blog-desc"></a><a
+                        href="https://wp.w3layouts.com/diner/2021/03/01/hello-world/" rel="bookmark"
+                        class="blog-desc">Hello world!</a>
+                      <p class="mb-0"> </p>
+
+                      <div class="p-footer mt-3">
+
+                        <div class="p-meta-info">
+
+                          <a href="https://wp.w3layouts.com/diner/author/w3layouts/" class="post-img-anchor">
+                            <img src="./img/logow3l.jpeg" alt="W3Layouts" class="post-img radius-img img-fluid">
+                          </a>
+                          <a class="url fn n" href="https://wp.w3layouts.com/diner/author/w3layouts/">W3Layouts</a>
+                        </div>
+
+                        <a href="https://wp.w3layouts.com/diner/2021/03/01/hello-world/" class="read">Read More <i
+                            class="fa-solid fa-chevron-right"></i></a>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </article>
+              </div>
+              <!-- </article>#post-4 -->
+              <div class="col-md-6 item mb-4">
+                <article id="post-1" class="post-1 post__item">
+                  <div class="card">
+                    <div class="card-header p-0 position-relative">
+                      <a href="https://wp.w3layouts.com/diner/2021/03/01/hello-world/">
+                      </a>
+                      <a class="post-thumbnail" href="https://wp.w3layouts.com/diner/2021/03/01/hello-world/"
+                        aria-hidden="true" tabindex="-1">
+                        <img src="./img/blog_g1.jpg" class="attachment-post-thumbnail " alt="Hello world!"
+                          decoding="async">
+                      </a>
+                      <div class="post-pos">
+                        <span><a href="https://wp.w3layouts.com/diner/category/drinks/"
+                            rel="category tag">Drinks</a></span>
+                        <span class="meta-info meta-info-custom">
+                          <i class="fa-regular fa-clock"></i>
+                          7:07 am </span>
+                      </div>
+
+                    </div>
+                    <div class="card-body p-0 blog-details">
+                      <a href="https://wp.w3layouts.com/diner/2021/03/01/hello-world/" class="blog-desc"></a><a
+                        href="https://wp.w3layouts.com/diner/2021/03/01/hello-world/" rel="bookmark"
+                        class="blog-desc">Hello world!</a>
+                      <p class="mb-0"> </p>
+
+                      <div class="p-footer mt-3">
+
+                        <div class="p-meta-info">
+
+                          <a href="https://wp.w3layouts.com/diner/author/w3layouts/" class="post-img-anchor">
+                            <img src="./img/logow3l.jpeg" alt="W3Layouts" class="post-img radius-img img-fluid">
+                          </a>
+                          <a class="url fn n" href="https://wp.w3layouts.com/diner/author/w3layouts/">W3Layouts</a>
+                        </div>
+
+                        <a href="https://wp.w3layouts.com/diner/2021/03/01/hello-world/" class="read">Read More <i
+                            class="fa-solid fa-chevron-right"></i></a>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </article>
+              </div>
+              <!-- </article>#post-5 -->
+              <div class="col-md-6 item mb-4">
+                <article id="post-1" class="post-1 post__item">
+                  <div class="card">
+                    <div class="card-header p-0 position-relative">
+                      <a href="https://wp.w3layouts.com/diner/2021/03/01/hello-world/">
+                      </a>
+                      <a class="post-thumbnail" href="https://wp.w3layouts.com/diner/2021/03/01/hello-world/"
+                        aria-hidden="true" tabindex="-1">
+                        <img src="./img/blog_g1.jpg" class="attachment-post-thumbnail " alt="Hello world!"
+                          decoding="async">
+                      </a>
+                      <div class="post-pos">
+                        <span><a href="https://wp.w3layouts.com/diner/category/drinks/"
+                            rel="category tag">Drinks</a></span>
+                        <span class="meta-info meta-info-custom">
+                          <i class="fa-regular fa-clock"></i>
+                          7:07 am </span>
+                      </div>
+                    </div>
+                    <div class="card-body p-0 blog-details">
+                      <a href="https://wp.w3layouts.com/diner/2021/03/01/hello-world/" class="blog-desc"></a><a
+                        href="https://wp.w3layouts.com/diner/2021/03/01/hello-world/" rel="bookmark"
+                        class="blog-desc">Hello world!</a>
+                      <p class="mb-0"> </p>
+                      <div class="p-footer mt-3">
+                        <div class="p-meta-info">
+                          <a href="https://wp.w3layouts.com/diner/author/w3layouts/" class="post-img-anchor">
+                            <img src="./img/logow3l.jpeg" alt="W3Layouts" class="post-img radius-img img-fluid">
+                          </a>
+                          <a class="url fn n" href="https://wp.w3layouts.com/diner/author/w3layouts/">W3Layouts</a>
+                        </div>
+                        <a href="https://wp.w3layouts.com/diner/2021/03/01/hello-world/" class="read">Read More <i
+                            class="fa-solid fa-chevron-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+
+                </article>
+              </div>
+              <!-- </article>#post-6 -->
+              <div class="col-md-6 item mb-4">
+                <article id="post-1" class="post-1 post__item">
+                  <div class="card">
+                    <div class="card-header p-0 position-relative">
+                      <a href="https://wp.w3layouts.com/diner/2021/03/01/hello-world/">
+                      </a>
+                      <a class="post-thumbnail" href="https://wp.w3layouts.com/diner/2021/03/01/hello-world/"
+                        aria-hidden="true" tabindex="-1">
+                        <img src="./img/blog_g1.jpg" class="attachment-post-thumbnail " alt="Hello world!"
+                          decoding="async">
+                      </a>
+                      <div class="post-pos">
+                        <span><a href="https://wp.w3layouts.com/diner/category/drinks/"
+                            rel="category tag">Drinks</a></span>
+                        <span class="meta-info meta-info-custom">
+                          <i class="fa-regular fa-clock"></i>
+                          7:07 am </span>
+                      </div>
+                    </div>
+                    <div class="card-body p-0 blog-details">
+                      <a href="https://wp.w3layouts.com/diner/2021/03/01/hello-world/" class="blog-desc"></a><a
+                        href="https://wp.w3layouts.com/diner/2021/03/01/hello-world/" rel="bookmark"
+                        class="blog-desc">Hello world!</a>
+                      <p class="mb-0"> </p>
+                      <div class="p-footer mt-3">
+                        <div class="p-meta-info">
+                          <a href="https://wp.w3layouts.com/diner/author/w3layouts/" class="post-img-anchor">
+                            <img src="./img/logow3l.jpeg" alt="W3Layouts" class="post-img radius-img img-fluid">
+                          </a>
+                          <a class="url fn n" href="https://wp.w3layouts.com/diner/author/w3layouts/">W3Layouts</a>
+                        </div>
+                        <a href="https://wp.w3layouts.com/diner/2021/03/01/hello-world/" class="read">Read More <i
+                            class="fa-solid fa-chevron-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+
+                </article>
+              </div>
+
+            </div>
+            <!-- pagination -->
+            <div class="pagination-wrapper mt-4">
+              <nav aria-label="Page navigation example">
+                <ul class="page-pagination d-flex justify-content-center">
+                  <ul class="page-numbers">
+                    <li><span aria-current="page" class="page-numbers current">1</span></li>
+                    <li><a class="page-numbers" href="https://wp.w3layouts.com/diner/blog-posts/page/2/">2</a></li>
+                    <li><a class="next page-numbers" href="https://wp.w3layouts.com/diner/blog-posts/page/2/">Next</a>
+                    </li>
+                  </ul>
+                </ul>
+              </nav>
+            </div>
+
+            <!-- //pagination -->
+          </div>
+
+
+
+          <div class="sidebar-side col-lg-4 col-md-12 col-sm-12 mt-lg-0 mt-5">
+            <div class="sidebar right-sidebar">
+              <aside id="secondary" class="widget-area">
+                <section id="search-2" class="widget widget_search">
+                  <form role="search" method="get" class="search-form" action="https://wp.w3layouts.com/diner/">
+                    <label>
+                      <span class="screen-reader-text">Search for:</span>
+                      <input type="search" class="search-field" placeholder="Search …" value="" name="s">
+                    </label>
+                    <input type="submit" class="search-submit" value="Search">
+                  </form>
+                </section>
+                <section id="recent-posts-2" class="widget widget_recent_entries">
+                  <h2 class="widget-title">Recent Posts</h2>
+                  <ul>
+                    <li>
+                      <a href="https://wp.w3layouts.com/diner/2021/03/01/hello-world/">Hello
+                        world!</a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://wp.w3layouts.com/diner/2021/03/01/the-best-cookie-recipes-to-bake-this-weekend-6/">The
+                        Best Cookie Recipes To Bake This Weekend
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://wp.w3layouts.com/diner/2021/03/01/the-best-cookie-recipes-to-bake-this-weekend-5/">The
+                        Best Cookie Recipes To Bake This Weekend</a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://wp.w3layouts.com/diner/2021/03/01/the-best-cookie-recipes-to-bake-this-weekend-4/">The
+                        Best Cookie Recipes To Bake This Weekend</a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://wp.w3layouts.com/diner/2021/03/01/the-best-cookie-recipes-to-bake-this-weekend-3/">The
+                        Best Cookie Recipes To Bake This Weekend</a>
+                    </li>
+                  </ul>
+
+                </section>
+                <section id="recent-comments-2" class="widget widget_recent_comments">
+                  <h2 class="widget-title">Recent Comments</h2>
+                  <ul id="recentcomments">
+                    <li class="recentcomments"><span class="comment-author-link"><a href="https://wordpress.org/"
+                          class="url" rel="ugc external nofollow">A WordPress Commenter</a></span> on <a
+                        href="https://wp.w3layouts.com/diner/2021/03/01/hello-world/#comment-1">Hello
+                        world!</a></li>
+                    <li class="recentcomments"><span class="comment-author-link"><a href="https://wordpress.org/"
+                          class="url" rel="ugc external nofollow">A WordPress Commenter</a></span> on <a
+                        href="https://wp.w3layouts.com/diner/2021/03/01/hello-world-2/#comment-2">Hello
+                        world!</a></li>
+                  </ul>
+                </section>
+                <section id="archives-2" class="widget widget_archive">
+                  <h2 class="widget-title">Archives</h2>
+                  <ul>
+                    <li><a href="https://wp.w3layouts.com/diner/2021/03/">March 2021</a></li>
+                  </ul>
+
+                </section>
+                <section id="categories-2" class="widget widget_categories">
+                  <h2 class="widget-title">Categories</h2>
+                  <ul>
+                    <li class="cat-item cat-item-2"><a href="https://wp.w3layouts.com/diner/category/drinks/">Drinks</a>
+                    </li>
+                    <li class="cat-item cat-item-3"><a href="https://wp.w3layouts.com/diner/category/food/">Food</a>
+                    </li>
+                  </ul>
+
+                </section>
+                <section id="meta-2" class="widget widget_meta">
+                  <h2 class="widget-title">Meta</h2>
+                  <ul>
+                    <li><a href="https://wp.w3layouts.com/diner/wp-login.php">Log in</a></li>
+                    <li><a href="https://wp.w3layouts.com/diner/feed/">Entries feed</a></li>
+                    <li><a href="https://wp.w3layouts.com/diner/comments/feed/">Comments feed</a>
+                    </li>
+
+                    <li><a href="https://wordpress.org/">WordPress.org</a></li>
+                  </ul>
+
+                </section>
+              </aside><!-- #secondary -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- FOOTER -->
+  <footer>
+    <section class="footer__main">
+      <div class="py-5">
+        <div class="container py-lg-4">
+          <div class="content row">
+            <!-- div 1 -->
+            <div class="diner col-lg-4 col-md-6 col-sm-7 pe-lg-5">
+              <div class="footer__logo mb-3">
+                <h5>
+                  <a class="navbar-brand" href="#">Diner</a>
+                </h5>
+              </div>
+              <p>
+                Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper
+                at tempufddfel.
+                Lorem
+                ipsum dolor sit amet Semper at elit.
+              </p>
+              <div class="footer__socials mt-4">
+                <a href="https://www.facebook.com/w3layouts/" class="facebook">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/W3layouts" class="twitter">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/w3layouts_/" class="instagram">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://in.linkedin.com/company/w3layouts" class="linkedin">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-5 col-6 mt-sm-0 mt-5 categories">
+              <div id="categories-4" class="widget_categories">
+                <h6>Categories</h6>
+                <ul>
+                  <li class="item-2"><a href="#drinks/">Drinks</a>
+                  </li>
+                  <li class="item-3"><a href="#food/">Food</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-5 col-6 archive mt-lg-0 mt-5">
+              <div id="archives-4" class="widget_archive">
+                <h6>Archives</h6>
+                <ul>
+                  <li><a href="#/diner/2021/03/">March 2021</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-7 mt-lg-0 mt-5 subcribe">
+              <h6>Subscribe to our Newsletter </h6>
+              <p>Enter your email and receive the latest news, updates and special offers from us.</p>
+              <form action="" class="form__subscribe mt-4" method="post">
+                <input id="Email" type="email" name="Email" placeholder="Your Email Address" required="">
+                <button class="btn form__btn w-100 mt-3">Subscribe Now</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- COPYRIGHT -->
+    <section class="copyright">
+      <div class="container">
+        <div class="row">
+          <p class="col-lg-8 copyright__text">
+            © 2023 Diner. All Rights Reserved | WordPress Theme by <a href="https://w3layouts.com/">W3Layouts.</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- END COPYRIGHT -->
+  </footer>
+  <!-- BACK TO TOP -->
+
+  <a href="#myHeader" class="backtotop cd-top text-replace js-cd-top ">
+    <i class="fa-solid fa-angle-up"></i>
+  </a>
+
+  </div>
+  </div>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+  <!-- Back to top animation -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./js/main_backtotop.js"></script>
+  <script src="./js/util.js"></script>
+  <!-- DARK MODE -->
+  <script src="./js/dark_theme.js"></script>
+</body>
+
+</html>
