@@ -20,58 +20,13 @@ ul{
     margin: 0;
     padding: 0;
 }
-
-/* RESPOSIVE */
 .container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 15px;
+    padding-right: 15px;
 }
-
-/* xs */
-@media (min-width: 475px) {
-    .container {
-        max-width: 475px;
-    }
-}
-
-/* sm */
-@media (min-width: 640px) {
-    .container {
-        max-width: 640px;
-    }
-}
-
-/* md */
-@media (min-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
-}
-
-/* lg */
-@media (min-width: 1024px) {
-    .container {
-        max-width: 1024px;
-    }
-}
-
-@media (min-width: 1280px) {
-    .container {
-        max-width: 1280px;
-    }
-}
-
-/* xl */
-@media (min-width: 1536px) {
-    .container {
-        max-width: 1536px;
-    }
-}
-
-/* 2xl */
 html {
     font-family: 'Quicksand', sans-serif;
     scroll-behavior: smooth;
@@ -590,40 +545,44 @@ color: #fff;
     max-width: 50%;
 }
 } */
-@media screen and (max-width: 1280px){
-.container {
-    max-width: 1200px;
+/* CONTAINER */
+/* xs */
+@media (min-width: 475px) {
+    .container {
+        max-width: 440px;
+    }
 }
+
+/* sm */
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
 }
-@media screen and (max-width: 1280px){
-.story__content .whatwedo {
-    grid-column-gap: 30px;
+
+/* md */
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
 }
+
+/* lg */
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
 }
-@media (max-width: 1080px){
-.story__content .whatwedo {
-    grid-column-gap: 15px;
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1200px;
+    }
 }
-}
-@media (max-width: 992px){
-.story__content .whatwedo {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 40px;
-}
-}
-@media (max-width: 800px){
-.story__content .whatwedo {
-    grid-template-columns: 1fr;
-}
-}
-@media (max-width: 568px){
-.story__content .whatwedo {
-    grid-row-gap: 20px;
-    grid-column-gap: 15px;
-}
-}
-@media (max-width: 415px){
-.story__content .whatwedo {
-    grid-template-columns: 1fr;
-}
+
+/* xl */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1200px;
+    }
 }
