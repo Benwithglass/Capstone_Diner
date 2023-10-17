@@ -41,21 +41,21 @@ header {
 
 header form .form-control{
     position: relative;
-    padding: 5px 50px 5px 20px;
+    padding: 5px 10px;
 }
 
 /* thay doi vi tri kinh lup */
 header form i:nth-child(2) {
     position: absolute;
-    right: 113px;
+    right: 164px;
     top: 25px;
 }
 
-header form i:last-child {
+/* header form i:last-child {
     position: absolute;
     top: 14px;
     right: -17px;
-}
+} */
 
 /* Tương lai tươi sáng */
 #myBody {
@@ -107,6 +107,9 @@ header form i:last-child {
     color: white !important;
 }
 
+.dark  i{
+    color: white;
+}
 .dark main .bg input {
     box-shadow: none;
 }
@@ -140,6 +143,10 @@ header .direction {
 
 header ol li a {
     color: orange;
+}
+
+header button{
+    background-color: transparent;
 }
 /* END HEADER */
 
@@ -427,48 +434,43 @@ color: #fff;
 }
 }
 @media (max-width: 415px){
+header .container{
+    padding-left: 13px;
+}
+header .container-fluid {
+    padding: 0;
+}
+header .container-fluid a{
+    font-size: 21px !important;
+}
+
+header .container-fluid form{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+header .container-fluid form .btn{
+    padding: 0;
+}
+.container-fluid form input {
+    height: 45px;
+    width: 160px;
+    font-size: 14px;
+} 
+header form i:nth-child(2) {
+    position: absolute;
+    right: 66px;
+    top: 21px;
+}
 .story__content .whatwedo {
     grid-template-columns: 1fr;
 }
+main .content h1{
+    font-size: 110px;
 }
-/* container */
-/* xs */
-@media (min-width: 475px) {
-    .container {
-        max-width: 440px;
-    }
+main input{
+    width: 195px !important;
 }
 
-/* sm */
-@media (min-width: 576px) {
-    .container {
-        max-width: 540px;
-    }
 }
 
-/* md */
-@media (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
-}
-
-/* lg */
-@media (min-width: 992px) {
-    .container {
-        max-width: 960px;
-    }
-}
-
-@media (min-width: 1280px) {
-    .container {
-        max-width: 1200px;
-    }
-}
-
-/* xl */
-@media (min-width: 1400px) {
-    .container {
-        max-width: 1200px;
-    }
-}
